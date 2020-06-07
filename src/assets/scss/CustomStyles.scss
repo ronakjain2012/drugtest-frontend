@@ -1,0 +1,28 @@
+.App {
+  background:#ece9e9;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Rambla', sans-serif;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+// -------------------------- //
+.random-background {
+  background-image: url("../images/backgrounds/1.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
