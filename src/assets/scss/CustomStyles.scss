@@ -5,21 +5,12 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Rambla', sans-serif;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
+  font-family: 'Catamaran', sans-serif;
 }
 
 
 
-
-
-
-
-
-
-// -------------------------- //
+// random
 .random-background {
   background-image: url("../images/backgrounds/1.jpg");
   background-position: center center;
@@ -29,7 +20,7 @@
 
 
 
-// ------- Component Loading 
+// Component Loading 
 
 #outer {
   margin: auto;
@@ -70,5 +61,29 @@
 
   to {
     -webkit-transform: rotate(630deg);
+  }
+}
+
+// Public Forms
+.PublicForms {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.PublicFormListing {
+  margin: 0vh 10em;
+  padding: 6vh;
+  .public-form-cards {
+    border-radius: 15px;
+    background-color: $primary;
+    color: $white;
+    font-weight: 600;
+    font-size: 20px;
   }
 }
