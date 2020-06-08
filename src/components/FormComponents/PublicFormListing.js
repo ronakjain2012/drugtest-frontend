@@ -24,11 +24,11 @@ const PublicFormListing = (props) => {
 	}
 	return (
 		<div className="PublicFormListing">
-			<Card>
+			<Card className="shadow-md rounded-sm">
 				{parentId ? (
 					<Card.Header className="text-left bg-transparent">
 						<h3 onClick={() => goBack(parentId)}>
-							<IoMdArrowRoundBack /> Back
+							<IoMdArrowRoundBack /> Back 
 						</h3>
 					</Card.Header>
 				) : (
@@ -38,7 +38,7 @@ const PublicFormListing = (props) => {
 					<CardColumns>
 						{formListing.map((item) => (
 							<Card
-								className="public-form-cards"
+								className="public-form-cards shadow-sm rounded-sm"
 								onClick={() => goNext(item.form_id)}
 								key={item.form_id}
 							>
