@@ -2,7 +2,7 @@ import React from "react";
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
 import { Button } from "react-bootstrap";
-import * as TestingActions from './../store/Testing/actions'
+import * as TestingActions from '../../store/Testing/actions'
 
 
 // This maps the state to the property of the component

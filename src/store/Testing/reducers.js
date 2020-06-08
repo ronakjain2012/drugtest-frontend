@@ -6,7 +6,6 @@ const initialTestingState = {
 };
 
 export function TestingStoreReducer(state = initialTestingState, action) {
-    console.log('ascc', state)
 	switch (action.type) {
 		case TEST_INCREMENT:
 			return {
