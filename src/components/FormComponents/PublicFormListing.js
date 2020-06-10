@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import T from "../Utils/T";
 import { Card, CardColumns } from "react-bootstrap";
 import { IoMdArrowRoundBack } from "react-icons/io";
@@ -11,7 +11,6 @@ const PublicFormListing = (props) => {
 	);
 	function goNext(item) {
 		var items = Object.values(props.forms).filter((e) => e.parent_id === item);
-
 		if (items.length) {
 			setParentId(item);
 			setFormListing(items);
@@ -28,7 +27,7 @@ const PublicFormListing = (props) => {
 				{parentId ? (
 					<Card.Header className="text-left bg-transparent">
 						<h3 onClick={() => goBack(parentId)}>
-							<IoMdArrowRoundBack /> Back 
+							<IoMdArrowRoundBack /> Back
 						</h3>
 					</Card.Header>
 				) : (
@@ -37,17 +36,19 @@ const PublicFormListing = (props) => {
 				<Card.Body>
 					<CardColumns>
 						{formListing.map((item) => (
-							<Card
-								className="public-form-cards shadow-sm rounded-sm"
-								onClick={() => goNext(item.form_id)}
-								key={item.form_id}
-							>
-								<Card.Body>
-									<Card.Text>
-										<T t={item.title} />
-									</Card.Text>
-								</Card.Body>
-							</Card>
+							<Link to={item.url} key={item.form_id}>
+								<Card
+									className="public-form-cards shadow-sm rounded-sm"
+									onClick={() => goNext(item.form_id)}
+									key={item.form_id}
+								>
+									<Card.Body>
+										<Card.Text>
+											<T t={item.title} />
+										</Card.Text>
+									</Card.Body>
+								</Card>
+							</Link>
 						))}
 					</CardColumns>
 				</Card.Body>

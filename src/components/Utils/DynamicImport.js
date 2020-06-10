@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-class DynamicImport extends Component {
+import React from "react";
+class DynamicImport extends React.Component {
     state = {
       component: null
     }
@@ -17,3 +17,4 @@ class DynamicImport extends Component {
   }
 
 export default DynamicImport;
+
