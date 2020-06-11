@@ -8,7 +8,7 @@
         "children": false,
         "priority": 1,
         "type": "form",
-        "url": "/cpuc"
+        "url": "/forms/cpuc"
     },
     "dot":{
         "form_id": "dot",
@@ -19,7 +19,7 @@
         "children": false,
         "priority": 2,
         "type": "form",
-        "url": "/dot"
+        "url": "/forms/dot"
     },
     "dna": {
         "form_id": "dna",
@@ -30,7 +30,7 @@
         "children": true,
         "priority": 3,
         "type": "form_list",
-        "url": "/dna"
+        "url": "/forms/dna"
     },
     "dna_paternity": {
         "form_id": "dna_paternity",
@@ -41,7 +41,7 @@
         "children": false,
         "priority": 1,
         "type": "form",
-        "url": "/dna_paternity"
+        "url": "/forms/dna_paternity"
     },
     "dna_immigration": {
         "form_id": "dna_immigration",
@@ -52,7 +52,7 @@
         "children": false,
         "priority": 3,
         "type": "form",
-        "url": "/dna_immigration"
+        "url": "/forms/dna_immigration"
     },
     "dna_passport": {
         "form_id": "dna_passport",
@@ -63,7 +63,7 @@
         "children": false,
         "priority": 4,
         "type": "form",
-        "url": "/dna_passport"
+        "url": "/forms/dna_passport"
     },
     "dna_infidelity": {
         "form_id": "dna_infidelity",
@@ -74,7 +74,7 @@
         "children": false,
         "priority": 5,
         "type": "form",
-        "url": "/dna_infidelity"
+        "url": "/forms/dna_infidelity"
     },
     "dna_others": {
         "form_id": "dna_others",
@@ -84,8 +84,8 @@
         "decription": "",
         "children": true,
         "priority": 5,
-        "type": "form",
-        "url": "/dna_others"
+        "type": "form_list",
+        "url": "/forms/dna_others"
     },
     "dna_others_maternity": {
         "form_id": "dna_others_maternity",
@@ -96,7 +96,7 @@
         "children": false,
         "priority": 1,
         "type": "form",
-        "url": "/dna_others_maternity"
+        "url": "/forms/dna_others_maternity"
     },
     "dna_others_grandparentage": {
         "form_id": "dna_others_grandparentage",
@@ -107,7 +107,7 @@
         "children": false,
         "priority": 2,
         "type": "form",
-        "url": "/dna_others_grandparentage"
+        "url": "/forms/dna_others_grandparentage"
     },
     "dna_others_avuncular": {
         "form_id": "dna_others_avuncular",
@@ -118,7 +118,7 @@
         "children": false,
         "priority": 3,
         "type": "form_list",
-        "url": "/dna_others_avuncular"
+        "url": "/forms/dna_others_avuncular"
     },
     "dna_others_siblingship": {
         "form_id": "dna_others_siblingship",
@@ -129,7 +129,7 @@
         "children": false,
         "priority": 4,
         "type": "form",
-        "url": "/dna_others_siblingship"
+        "url": "/forms/dna_others_siblingship"
     },
     "taxi":{
         "form_id": "taxi",
@@ -140,7 +140,7 @@
         "children": false,
         "priority": 4,
         "type": "form",
-        "url": "/taxi"
+        "url": "/forms/taxi"
     },
     "personal":{
         "form_id": "personal",
@@ -151,7 +151,7 @@
         "children": false,
         "priority": 5,
         "type": "form",
-        "url": "/personal"
+        "url": "/forms/personal"
     },
     "us_coast_guard":{
         "form_id": "us_coast_guard",
@@ -162,7 +162,7 @@
         "children": false,
         "priority": 6,
         "type": "form",
-        "url": "/us_coast_guard"
+        "url": "/forms/us_coast_guard"
     },
     "alc": {
         "form_id": "alc",
@@ -173,7 +173,7 @@
         "children": false,
         "priority": 7,
         "type": "form",
-        "url": "/alc"
+        "url": "/forms/alc"
     },
     "lando": {
         "form_id": "lando",
@@ -184,6 +184,6 @@
         "children": false,
         "priority": 8,
         "type": "form",
-        "url": "/lando"
+        "url": "/forms/lando"
     }
 }
