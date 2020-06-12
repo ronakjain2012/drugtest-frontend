@@ -13,10 +13,9 @@ const PublicForms = (props) => {
 	function goBack(item) {
 		var formId = Object.values(FormsData).find((e) => e.form_id === item);	
 		const redirecTo = formId.parent_id===null?'/':formId.url
-		setParentId(formId.parent_id||null)
-		setFormListing(Object.values(FormsData).filter((i)=>i.parent_id === formId.parent_id));
+		setNext(formId.parent_id)
 		props.history.push(redirecTo);
-	}
+    }
 	function setNext(formId) {
 		setParentId(formId||null)
 		setFormListing(Object.values(FormsData).filter((i)=>i.parent_id === formId));
@@ -25,7 +24,7 @@ const PublicForms = (props) => {
 
     return (
         <div className="PublicForms">
-            <p> <T t="Public Forms Listing"/> {parentId} </p>
+            <p> <T t="Public Forms Listing"/> </p>
             <PublicFormListing parentId={parentId} forms={formListing} goBack={goBack} setNext={setNext}/>
         </div>
     )

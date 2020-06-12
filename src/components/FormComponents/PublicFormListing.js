@@ -1,7 +1,7 @@
 import React from "react";
 import { Link,withRouter } from "react-router-dom";
 import T from "../Utils/T";
-import { Card, CardColumns } from "react-bootstrap";
+import { Card, CardDeck } from "react-bootstrap";
 import { IoMdArrowRoundBack } from "react-icons/io";
 
 const PublicFormListing = (props) => {
@@ -18,12 +18,13 @@ const PublicFormListing = (props) => {
 					""
 				)}
 				<Card.Body>
-					<CardColumns>
+					<CardDeck>
 						{props.forms.map((item) =>
 								<Link to={item.url} key={item.form_id} onClick={()=>{props.setNext(item.form_id)}}>
 									<Card
-										className="public-form-cards shadow-sm rounded-sm"
-										key={item.form_id}
+										className="public-form-cards shadow-md shadow-md-hover btn-gradient-hover btn-gradient-primary rounded-sm"
+										key={item.form_id} 
+										style={{ width: '25rem' }}
 									>
 										<Card.Body>
 											<Card.Text>
@@ -33,7 +34,7 @@ const PublicFormListing = (props) => {
 									</Card>
 								</Link>
 						)}
-					</CardColumns>
+					</CardDeck>
 				</Card.Body>
 			</Card>
 		</div>

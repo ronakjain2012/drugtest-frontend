@@ -11,6 +11,13 @@
 
 
 // random
+@mixin gradientBg($direction, $startColor, $endColor) {
+  background: $startColor;
+  background: -moz-linear-gradient($direction, $startColor 0%, $endColor 80%, $endColor 100%);
+  background: -webkit-linear-gradient($direction, $startColor 0%, $endColor 80%, $endColor 100%);
+  background: linear-gradient($direction, $startColor 0%, $endColor 80%, $endColor 100%);
+}
+
 .random-background {
   background-image: url("../images/backgrounds/1.jpg");
   background-position: center center;
@@ -20,8 +27,37 @@
 
 .shadow-md {
   box-shadow: 0px 0px 9px $gray-500;
+  transition: .30s box-shadow;
 }
 
+.shadow-md-hover:focus,
+.shadow-md-hover:hover {
+  box-shadow: 0 5px 11px 0 $gray-600, 0 4px 15px 0 $gray-600;
+}
+ 
+$primary-dark: lighten($primary,10%);
+.btn-gradient-hover {
+  cursor:              pointer;
+  transition:          all .3s ease-in-out;
+  background-position: 0%;
+  &.btn-gradient-primary {
+    background:      linear-gradient(to right, $primary, $primary-dark, $primary);
+    background-size: 200%;
+    &:hover {
+      box-shadow:          0 10px 20px rgba($primary-dark, 0.19), 0 6px 6px rgba($primary-dark, 0.23);    
+      background-position: 100%;
+    }
+    &.outline {
+      box-shadow:      inset 0 0 0 3px $primary;
+      background:      linear-gradient(to right, rgba($primary, 0), rgba($primary, 0), $primary, $primary-dark);
+      background-size: 300%;
+      &:hover {
+        box-shadow:          inset 0 0 0 0 $primary, 0 10px 20px rgba($primary-dark, 0.38), 0 6px 6px rgba($primary-dark, 0.46);    
+        background-position: 100%;
+      }
+    }
+  }
+}
 
 // Component Loading 
 
@@ -68,7 +104,7 @@
 }
 
 // Public Forms
-.PublicForms {
+.PublicForms, .FormRouteHandler {
   height: 100%;
   width: 100%;
   min-height: 100vh;
@@ -80,12 +116,13 @@
 }
 
 .PublicFormListing {
-  margin: 0vh 10em;
-  padding: 6vh;
+  margin: 0vh 19em;
+
   .public-form-cards {
     background-color: $primary;
     color: $white;
     font-weight: 600;
     font-size: 20px;
+    margin: 1rem;
   }
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import T from './../Utils/T'
 import DynamicImport from "./../Utils/DynamicImport";
 import ComponentLoad from "./../Utils/ComponentLoad";
 import FormsData from "./../../config/PublicForms.json";
@@ -13,9 +12,22 @@ const PublicForms = (props) => (
 	</DynamicImport>
 );
 
+const FormGenerator = (props) => (
+	<DynamicImport load={() => import("./../FormComponents/FormGenerator")}>
+		{(Component) =>
+			Component === null ? <ComponentLoad /> : <Component {...props} />
+		}
+	</DynamicImport>
+);
+
+
 const DecideAction = (prop) => {
     if(prop.form.type==="form_list"){
         return <PublicForms parentId={prop.form.form_id} />
+    }
+    
+    if(prop.form.type==="form"){
+        return <FormGenerator parentId={prop.form.form_id} />
     }
 }
 const FormRouteHandler = (props) => {
