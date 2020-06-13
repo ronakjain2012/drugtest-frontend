@@ -12,8 +12,6 @@ function App() {
 			<div className="App">
 				{/* <TestingRedux /> */}
 				<Routes />
-
-				
 			</div>
 		</Provider>
 	);

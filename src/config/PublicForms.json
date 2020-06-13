@@ -117,7 +117,7 @@
         "decription": "",
         "children": false,
         "priority": 3,
-        "type": "form_list",
+        "type": "form",
         "url": "/forms/dna_others_avuncular"
     },
     "dna_others_siblingship": {

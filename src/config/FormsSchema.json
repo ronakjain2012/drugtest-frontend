@@ -1,76 +1,163 @@
 {
     "cpuc": {
-        "form_id": "us_coast_guard",
+        "form_id": "cpuc",
         "parent_id": null,
+        "inline_form": true,
         "page_head": {
-            "title": "US Cost Guard",
+            "title": "CPUS ",
             "meta": {}
         },
         "page_body": {
-            "title": "US Cost Guard",
-            "logo": "",
-            "descriptiopn": ""
+            "title": "CPSC",
+            "logo": "/logo/right-logo.png",
+            "description": "Release Authorization"
         },
         "field_schema": {
             "date": {
+                "lable": "Date",
                 "field_id": "date",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
             },
             "name": {
+                "lable": "Name",
                 "field_id": "name",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": "authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
             },
             "drivingLicense": {
+                "lable": "Driving Licence",
                 "field_id": "drivingLicense",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
             },
             "state": {
+                "lable": "State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": null
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
             },
             "mailingAddress": {
+                "lable": "Mailing Address",
                 "field_id": "mailingAddress",
                 "type": "parent",
-                "parent_id": null
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
             },
             "mailingAddress_address": {
+                "lable": "Mailing Address",
                 "field_id": "address",
                 "type": "textarea",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
             },
             "mailingAddress_city": {
+                "lable": "Mailing City",
                 "field_id": "city",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
             },
             "mailingAddress_state": {
+                "lable": "Mailing State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": "mailingAddress"
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
             },
             "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
                 "field_id": "zipcode",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
             },
             "phone_number": {
+                "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
             },
             "email": {
+                "lable": "Email",
                 "field_id": "email",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
             },
             "signature": {
+                "lable": "Signature",
                 "field_id": "signature",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
             }
         },
         "get_action": {
@@ -83,77 +170,164 @@
         }
     },
     "dot": {
-        "form_id": "us_coast_guard",
+        "form_id": "dot",
         "parent_id": null,
+        "inline_form": true,
         "page_head": {
-            "title": "US Cost Guard",
+            "title": "DOT Bus/Truck",
             "meta": {}
         },
         "page_body": {
-            "title": "US Cost Guard",
-            "logo": "",
-            "descriptiopn": ""
+            "title": "DOT Bus/Truck",
+            "logo": "/logo/right-logo.png",
+            "description": "DOT Drug and Alcohol Testing Consortium Enrollment Form"
         },
         "field_schema": {
             "date": {
+                "lable": "Date",
                 "field_id": "date",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
             },
             "name": {
+                "lable": "Name",
                 "field_id": "name",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": "authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
             },
             "drivingLicense": {
+                "lable": "Driving Licence",
                 "field_id": "drivingLicense",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
             },
             "state": {
+                "lable": "State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": null
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
             },
             "mailingAddress": {
+                "lable": "Mailing Address",
                 "field_id": "mailingAddress",
                 "type": "parent",
-                "parent_id": null
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
             },
             "mailingAddress_address": {
+                "lable": "Mailing Address",
                 "field_id": "address",
                 "type": "textarea",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
             },
             "mailingAddress_city": {
+                "lable": "Mailing City",
                 "field_id": "city",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
             },
             "mailingAddress_state": {
+                "lable": "Mailing State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": "mailingAddress"
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
             },
             "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
                 "field_id": "zipcode",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
             },
             "phone_number": {
+                "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
             },
             "email": {
+                "lable": "Email",
                 "field_id": "email",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
             },
             "signature": {
+                "lable": "Signature",
                 "field_id": "signature",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
             }
         },
         "get_action": {
@@ -166,77 +340,164 @@
         }
     },
     "taxi": {
-        "form_id": "us_coast_guard",
+        "form_id": "taxi",
         "parent_id": null,
+        "inline_form": true,
         "page_head": {
-            "title": "US Cost Guard",
+            "title": "Release Authorization",
             "meta": {}
         },
         "page_body": {
-            "title": "US Cost Guard",
-            "logo": "",
-            "descriptiopn": ""
+            "title": "Taxi",
+            "logo": "/logo/right-logo.png",
+            "description": "Release Authorization"
         },
         "field_schema": {
             "date": {
+                "lable": "Date",
                 "field_id": "date",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
             },
             "name": {
+                "lable": "Name",
                 "field_id": "name",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": "authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results to Oakland Taxi",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
             },
             "drivingLicense": {
+                "lable": "Driving Licence",
                 "field_id": "drivingLicense",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
             },
             "state": {
+                "lable": "State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": null
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
             },
             "mailingAddress": {
+                "lable": "Mailing Address",
                 "field_id": "mailingAddress",
                 "type": "parent",
-                "parent_id": null
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
             },
             "mailingAddress_address": {
+                "lable": "Mailing Address",
                 "field_id": "address",
                 "type": "textarea",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
             },
             "mailingAddress_city": {
+                "lable": "Mailing City",
                 "field_id": "city",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
             },
             "mailingAddress_state": {
+                "lable": "Mailing State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": "mailingAddress"
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
             },
             "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
                 "field_id": "zipcode",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
             },
             "phone_number": {
+                "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
             },
             "email": {
+                "lable": "Email",
                 "field_id": "email",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
             },
             "signature": {
+                "lable": "Signature",
                 "field_id": "signature",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
             }
         },
         "get_action": {
@@ -249,77 +510,164 @@
         }
     },
     "personal": {
-        "form_id": "us_coast_guard",
+        "form_id": "personal",
         "parent_id": null,
+        "inline_form": true,
         "page_head": {
-            "title": "US Cost Guard",
+            "title": "Release Authorization",
             "meta": {}
         },
         "page_body": {
-            "title": "US Cost Guard",
-            "logo": "",
-            "descriptiopn": ""
+            "title": "Personal Test",
+            "logo": "/logo/right-logo.png",
+            "description": "Release Authorization"
         },
         "field_schema": {
             "date": {
+                "lable": "Date",
                 "field_id": "date",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
             },
             "name": {
+                "lable": "Name",
                 "field_id": "name",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results to",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
             },
             "drivingLicense": {
+                "lable": "Driving Licence",
                 "field_id": "drivingLicense",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
             },
             "state": {
+                "lable": "State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": null
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
             },
             "mailingAddress": {
+                "lable": "Mailing Address",
                 "field_id": "mailingAddress",
                 "type": "parent",
-                "parent_id": null
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
             },
             "mailingAddress_address": {
+                "lable": "Mailing Address",
                 "field_id": "address",
                 "type": "textarea",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
             },
             "mailingAddress_city": {
+                "lable": "Mailing City",
                 "field_id": "city",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
             },
             "mailingAddress_state": {
+                "lable": "Mailing State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": "mailingAddress"
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
             },
             "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
                 "field_id": "zipcode",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
             },
             "phone_number": {
+                "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
             },
             "email": {
+                "lable": "Email",
                 "field_id": "email",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
             },
             "signature": {
+                "lable": "Signature",
                 "field_id": "signature",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
             }
         },
         "get_action": {
@@ -334,75 +682,162 @@
     "us_coast_guard": {
         "form_id": "us_coast_guard",
         "parent_id": null,
+        "inline_form": true,
         "page_head": {
-            "title": "US Cost Guard",
+            "title": "Release Authorization",
             "meta": {}
         },
         "page_body": {
-            "title": "US Cost Guard",
-            "logo": "",
-            "descriptiopn": ""
+            "title": "US Coast Guard",
+            "logo": "/logo/right-logo.png",
+            "description": "Release Authorization"
         },
         "field_schema": {
             "date": {
+                "lable": "Date",
                 "field_id": "date",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
             },
             "name": {
+                "lable": "Name",
                 "field_id": "name",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
             },
             "drivingLicense": {
+                "lable": "Driving Licence",
                 "field_id": "drivingLicense",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
             },
             "state": {
+                "lable": "State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": null
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
             },
             "mailingAddress": {
+                "lable": "Mailing Address",
                 "field_id": "mailingAddress",
                 "type": "parent",
-                "parent_id": null
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
             },
             "mailingAddress_address": {
+                "lable": "Mailing Address",
                 "field_id": "address",
                 "type": "textarea",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
             },
             "mailingAddress_city": {
+                "lable": "Mailing City",
                 "field_id": "city",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
             },
             "mailingAddress_state": {
+                "lable": "Mailing State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": "mailingAddress"
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
             },
             "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
                 "field_id": "zipcode",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
             },
             "phone_number": {
+                "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
             },
             "email": {
+                "lable": "Email",
                 "field_id": "email",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
             },
             "signature": {
+                "lable": "Signature",
                 "field_id": "signature",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
             }
         },
         "get_action": {
@@ -414,79 +849,335 @@
             "type": ""
         }
     },
-
+    "lando":{
+        "form_id": "us_coast_guard",
+        "parent_id": null,
+        "inline_form": true,
+        "page_head": {
+            "title": "Release Authorization",
+            "meta": {}
+        },
+        "page_body": {
+            "title": "Lan Do & Associates, LLC",
+            "logo": "/logo/right-logo.png",
+            "description": "Release Authorization"
+        },
+        "field_schema": {
+            "date": {
+                "lable": "Date",
+                "field_id": "date",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
+            },
+            "name": {
+                "lable": "Name",
+                "field_id": "name",
+                "type": "input",
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
+            },
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "mailingAddress": {
+                "lable": "Mailing Address",
+                "field_id": "mailingAddress",
+                "type": "parent",
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
+            },
+            "mailingAddress_address": {
+                "lable": "Mailing Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
+            },
+            "mailingAddress_city": {
+                "lable": "Mailing City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
+            },
+            "mailingAddress_state": {
+                "lable": "Mailing State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
+            },
+            "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
+            },
+            "phone_number": {
+                "lable": "Phone Number",
+                "field_id": "phone_number",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
+            },
+            "email": {
+                "lable": "Email",
+                "field_id": "email",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
+            },
+            "signature": {
+                "lable": "Signature",
+                "field_id": "signature",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
+            }
+        },
+        "get_action": {
+            "url": "",
+            "type": ""
+        },
+        "post_action": {
+            "url": "",
+            "type": ""
+        }
+    },
     "alc": {
         "form_id": "us_coast_guard",
         "parent_id": null,
+        "inline_form": true,
         "page_head": {
-            "title": "US Cost Guard",
+            "title": "Release Authorization",
             "meta": {}
         },
         "page_body": {
-            "title": "US Cost Guard",
-            "logo": "",
-            "descriptiopn": ""
+            "title": "ALC",
+            "logo": "/logo/right-logo.png",
+            "description": "Consortium Enrollment Form"
         },
         "field_schema": {
             "date": {
+                "lable": "Date",
                 "field_id": "date",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
             },
             "name": {
+                "lable": "Name",
                 "field_id": "name",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
             },
             "drivingLicense": {
+                "lable": "Driving Licence",
                 "field_id": "drivingLicense",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
             },
             "state": {
+                "lable": "State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": null
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
             },
             "mailingAddress": {
+                "lable": "Mailing Address",
                 "field_id": "mailingAddress",
                 "type": "parent",
-                "parent_id": null
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
             },
             "mailingAddress_address": {
+                "lable": "Mailing Address",
                 "field_id": "address",
                 "type": "textarea",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
             },
             "mailingAddress_city": {
+                "lable": "Mailing City",
                 "field_id": "city",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
             },
             "mailingAddress_state": {
+                "lable": "Mailing State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": "mailingAddress"
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
             },
             "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
                 "field_id": "zipcode",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
             },
             "phone_number": {
+                "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
             },
             "email": {
+                "lable": "Email",
                 "field_id": "email",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
             },
             "signature": {
+                "lable": "Signature",
                 "field_id": "signature",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
             }
         },
         "get_action": {
@@ -498,78 +1189,1355 @@
             "type": ""
         }
     },
-    "lando": {
+    "dna_paternity": {
         "form_id": "us_coast_guard",
         "parent_id": null,
+        "inline_form": true,
         "page_head": {
-            "title": "US Cost Guard",
+            "title": "Release Authorization",
             "meta": {}
         },
         "page_body": {
-            "title": "US Cost Guard",
-            "logo": "",
-            "descriptiopn": ""
+            "title": "ALC",
+            "logo": "/logo/right-logo.png",
+            "description": "Consortium Enrollment Form"
         },
         "field_schema": {
             "date": {
+                "lable": "Date",
                 "field_id": "date",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
             },
             "name": {
+                "lable": "Name",
                 "field_id": "name",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
             },
             "drivingLicense": {
+                "lable": "Driving Licence",
                 "field_id": "drivingLicense",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
             },
             "state": {
+                "lable": "State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": null
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
             },
             "mailingAddress": {
+                "lable": "Mailing Address",
                 "field_id": "mailingAddress",
                 "type": "parent",
-                "parent_id": null
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
             },
             "mailingAddress_address": {
+                "lable": "Mailing Address",
                 "field_id": "address",
                 "type": "textarea",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
             },
             "mailingAddress_city": {
+                "lable": "Mailing City",
                 "field_id": "city",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
             },
             "mailingAddress_state": {
+                "lable": "Mailing State",
                 "field_id": "state",
-                "type": "input",
-                "parent_id": "mailingAddress"
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
             },
             "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
                 "field_id": "zipcode",
                 "type": "input",
-                "parent_id": "mailingAddress"
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
             },
             "phone_number": {
+                "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
             },
             "email": {
+                "lable": "Email",
                 "field_id": "email",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
             },
             "signature": {
+                "lable": "Signature",
                 "field_id": "signature",
                 "type": "input",
-                "parent_id": null
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
+            }
+        },
+        "get_action": {
+            "url": "",
+            "type": ""
+        },
+        "post_action": {
+            "url": "",
+            "type": ""
+        }
+    },
+    "dna_immigration": {
+        "form_id": "us_coast_guard",
+        "parent_id": null,
+        "inline_form": true,
+        "page_head": {
+            "title": "Release Authorization",
+            "meta": {}
+        },
+        "page_body": {
+            "title": "ALC",
+            "logo": "/logo/right-logo.png",
+            "description": "Consortium Enrollment Form"
+        },
+        "field_schema": {
+            "date": {
+                "lable": "Date",
+                "field_id": "date",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
+            },
+            "name": {
+                "lable": "Name",
+                "field_id": "name",
+                "type": "input",
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
+            },
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "mailingAddress": {
+                "lable": "Mailing Address",
+                "field_id": "mailingAddress",
+                "type": "parent",
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
+            },
+            "mailingAddress_address": {
+                "lable": "Mailing Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
+            },
+            "mailingAddress_city": {
+                "lable": "Mailing City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
+            },
+            "mailingAddress_state": {
+                "lable": "Mailing State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
+            },
+            "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
+            },
+            "phone_number": {
+                "lable": "Phone Number",
+                "field_id": "phone_number",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
+            },
+            "email": {
+                "lable": "Email",
+                "field_id": "email",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
+            },
+            "signature": {
+                "lable": "Signature",
+                "field_id": "signature",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
+            }
+        },
+        "get_action": {
+            "url": "",
+            "type": ""
+        },
+        "post_action": {
+            "url": "",
+            "type": ""
+        }
+    },
+    "dna_passport": {
+        "form_id": "us_coast_guard",
+        "parent_id": null,
+        "inline_form": true,
+        "page_head": {
+            "title": "Release Authorization",
+            "meta": {}
+        },
+        "page_body": {
+            "title": "ALC",
+            "logo": "/logo/right-logo.png",
+            "description": "Consortium Enrollment Form"
+        },
+        "field_schema": {
+            "date": {
+                "lable": "Date",
+                "field_id": "date",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
+            },
+            "name": {
+                "lable": "Name",
+                "field_id": "name",
+                "type": "input",
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
+            },
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "mailingAddress": {
+                "lable": "Mailing Address",
+                "field_id": "mailingAddress",
+                "type": "parent",
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
+            },
+            "mailingAddress_address": {
+                "lable": "Mailing Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
+            },
+            "mailingAddress_city": {
+                "lable": "Mailing City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
+            },
+            "mailingAddress_state": {
+                "lable": "Mailing State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
+            },
+            "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
+            },
+            "phone_number": {
+                "lable": "Phone Number",
+                "field_id": "phone_number",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
+            },
+            "email": {
+                "lable": "Email",
+                "field_id": "email",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
+            },
+            "signature": {
+                "lable": "Signature",
+                "field_id": "signature",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
+            }
+        },
+        "get_action": {
+            "url": "",
+            "type": ""
+        },
+        "post_action": {
+            "url": "",
+            "type": ""
+        }
+    },
+    "dna_infidelity": {
+        "form_id": "us_coast_guard",
+        "parent_id": null,
+        "inline_form": true,
+        "page_head": {
+            "title": "Release Authorization",
+            "meta": {}
+        },
+        "page_body": {
+            "title": "ALC",
+            "logo": "/logo/right-logo.png",
+            "description": "Consortium Enrollment Form"
+        },
+        "field_schema": {
+            "date": {
+                "lable": "Date",
+                "field_id": "date",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
+            },
+            "name": {
+                "lable": "Name",
+                "field_id": "name",
+                "type": "input",
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
+            },
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "mailingAddress": {
+                "lable": "Mailing Address",
+                "field_id": "mailingAddress",
+                "type": "parent",
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
+            },
+            "mailingAddress_address": {
+                "lable": "Mailing Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
+            },
+            "mailingAddress_city": {
+                "lable": "Mailing City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
+            },
+            "mailingAddress_state": {
+                "lable": "Mailing State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
+            },
+            "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
+            },
+            "phone_number": {
+                "lable": "Phone Number",
+                "field_id": "phone_number",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
+            },
+            "email": {
+                "lable": "Email",
+                "field_id": "email",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
+            },
+            "signature": {
+                "lable": "Signature",
+                "field_id": "signature",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
+            }
+        },
+        "get_action": {
+            "url": "",
+            "type": ""
+        },
+        "post_action": {
+            "url": "",
+            "type": ""
+        }
+    },
+    "dna_others_maternity": {
+        "form_id": "us_coast_guard",
+        "parent_id": null,
+        "inline_form": true,
+        "page_head": {
+            "title": "Release Authorization",
+            "meta": {}
+        },
+        "page_body": {
+            "title": "ALC",
+            "logo": "/logo/right-logo.png",
+            "description": "Consortium Enrollment Form"
+        },
+        "field_schema": {
+            "date": {
+                "lable": "Date",
+                "field_id": "date",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
+            },
+            "name": {
+                "lable": "Name",
+                "field_id": "name",
+                "type": "input",
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
+            },
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "mailingAddress": {
+                "lable": "Mailing Address",
+                "field_id": "mailingAddress",
+                "type": "parent",
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
+            },
+            "mailingAddress_address": {
+                "lable": "Mailing Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
+            },
+            "mailingAddress_city": {
+                "lable": "Mailing City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
+            },
+            "mailingAddress_state": {
+                "lable": "Mailing State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
+            },
+            "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
+            },
+            "phone_number": {
+                "lable": "Phone Number",
+                "field_id": "phone_number",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
+            },
+            "email": {
+                "lable": "Email",
+                "field_id": "email",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
+            },
+            "signature": {
+                "lable": "Signature",
+                "field_id": "signature",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
+            }
+        },
+        "get_action": {
+            "url": "",
+            "type": ""
+        },
+        "post_action": {
+            "url": "",
+            "type": ""
+        }
+    },
+    "dna_others_grandparentage": {
+        "form_id": "us_coast_guard",
+        "parent_id": null,
+        "inline_form": true,
+        "page_head": {
+            "title": "Release Authorization",
+            "meta": {}
+        },
+        "page_body": {
+            "title": "ALC",
+            "logo": "/logo/right-logo.png",
+            "description": "Consortium Enrollment Form"
+        },
+        "field_schema": {
+            "date": {
+                "lable": "Date",
+                "field_id": "date",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
+            },
+            "name": {
+                "lable": "Name",
+                "field_id": "name",
+                "type": "input",
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
+            },
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "mailingAddress": {
+                "lable": "Mailing Address",
+                "field_id": "mailingAddress",
+                "type": "parent",
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
+            },
+            "mailingAddress_address": {
+                "lable": "Mailing Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
+            },
+            "mailingAddress_city": {
+                "lable": "Mailing City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
+            },
+            "mailingAddress_state": {
+                "lable": "Mailing State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
+            },
+            "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
+            },
+            "phone_number": {
+                "lable": "Phone Number",
+                "field_id": "phone_number",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
+            },
+            "email": {
+                "lable": "Email",
+                "field_id": "email",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
+            },
+            "signature": {
+                "lable": "Signature",
+                "field_id": "signature",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
+            }
+        },
+        "get_action": {
+            "url": "",
+            "type": ""
+        },
+        "post_action": {
+            "url": "",
+            "type": ""
+        }
+    },
+    "dna_others_siblingship": {
+        "form_id": "us_coast_guard",
+        "parent_id": null,
+        "inline_form": true,
+        "page_head": {
+            "title": "Release Authorization",
+            "meta": {}
+        },
+        "page_body": {
+            "title": "ALC",
+            "logo": "/logo/right-logo.png",
+            "description": "Consortium Enrollment Form"
+        },
+        "field_schema": {
+            "date": {
+                "lable": "Date",
+                "field_id": "date",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
+            },
+            "name": {
+                "lable": "Name",
+                "field_id": "name",
+                "type": "input",
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
+            },
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "mailingAddress": {
+                "lable": "Mailing Address",
+                "field_id": "mailingAddress",
+                "type": "parent",
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
+            },
+            "mailingAddress_address": {
+                "lable": "Mailing Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
+            },
+            "mailingAddress_city": {
+                "lable": "Mailing City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
+            },
+            "mailingAddress_state": {
+                "lable": "Mailing State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
+            },
+            "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
+            },
+            "phone_number": {
+                "lable": "Phone Number",
+                "field_id": "phone_number",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
+            },
+            "email": {
+                "lable": "Email",
+                "field_id": "email",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
+            },
+            "signature": {
+                "lable": "Signature",
+                "field_id": "signature",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
+            }
+        },
+        "get_action": {
+            "url": "",
+            "type": ""
+        },
+        "post_action": {
+            "url": "",
+            "type": ""
+        }
+    },
+    "dna_others_avuncular": {
+        "form_id": "us_coast_guard",
+        "parent_id": null,
+        "inline_form": true,
+        "page_head": {
+            "title": "Release Authorization",
+            "meta": {}
+        },
+        "page_body": {
+            "title": "ALC",
+            "logo": "/logo/right-logo.png",
+            "description": "Consortium Enrollment Form"
+        },
+        "field_schema": {
+            "date": {
+                "lable": "Date",
+                "field_id": "date",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Date"
+            },
+            "txt_node1": {
+                "type": "text",
+                "data": "I,",
+                "parent_id": null,
+                "style": "font-18",
+                "custom_style": "font-18"
+            },
+            "name": {
+                "lable": "Name",
+                "field_id": "name",
+                "type": "input",
+                "parent_id": null,
+                "style": "",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Name"
+            },
+            "txt_node2": {
+                "type": "text",
+                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
+            },
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "mailingAddress": {
+                "lable": "Mailing Address",
+                "field_id": "mailingAddress",
+                "type": "parent",
+                "parent_id": null,
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Mailing Address"
+            },
+            "mailingAddress_address": {
+                "lable": "Mailing Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
+            },
+            "mailingAddress_city": {
+                "lable": "Mailing City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "City"
+            },
+            "mailingAddress_state": {
+                "lable": "Mailing State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "State"
+            },
+            "mailingAddress_zipcode": {
+                "lable": "Mailing Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Zipcode"
+            },
+            "phone_number": {
+                "lable": "Phone Number",
+                "field_id": "phone_number",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Phone Number"
+            },
+            "email": {
+                "lable": "Email",
+                "field_id": "email",
+                "type": "input",
+                "parent_id": null,
+                "style": "6",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Email"
+            },
+            "signature": {
+                "lable": "Signature",
+                "field_id": "signature",
+                "type": "input",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
             }
         },
         "get_action": {
