@@ -1,5 +1,5 @@
 .App {
-  background: #ece9e9;
+  background: url(../images/background1.png);
   height: 100%;
   width: 100%;
   min-height: 100vh;
@@ -73,7 +73,7 @@ $primary-dark: lighten($primary, 10%);
 }
 
 .font-18{
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .self-center {
@@ -162,3 +162,7 @@ $primary-dark: lighten($primary, 10%);
     margin: 1rem;
   }
 }
+
+
+
+/* -------- */

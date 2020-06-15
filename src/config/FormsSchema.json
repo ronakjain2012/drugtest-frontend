@@ -4435,8 +4435,8 @@
                 "type": "text",
                 "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
                 "parent_id": null,
-                "style": "full-width",
-                "custom_style": "font-18"
+                "style": "6",
+                "custom_style": "font-18 col-lg-8"
             },
             "drivingLicense": {
                 "lable": "Driving Licence",

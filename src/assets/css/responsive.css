@@ -1,0 +1,542 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:1600px) {
+	.progress {
+		width: 79%;
+	}
+	.sainput-group {
+		width: 47%;
+	}
+}
+@media screen and (max-width:1450px){
+	.selectleft {
+		width: 31.5%;
+	}
+	.sainput-group {
+		width: 47% ;
+	}
+	.selectbox label:before {
+		right: 1px;
+	}
+	.dsclient-outer .slimScrollDiv, .dsclient-outer .dsclient-listing {
+		height: 432px !important;
+	}
+	.result-innerbox a {
+		width: 23%;
+	}
+}
+@media screen and (max-width:1250px) {
+	.progressbar-box h4 {
+		font-size: 14px;
+	}
+	.loginpage {
+		transform: translate(-50%, -30%);
+		margin-bottom: 50px;
+	}
+	.progress {
+		width: 78%;
+	}
+	.specimen-heading h3 {
+		margin: 0;
+		font-size: 19px;
+		color: #424e58;
+		line-height: 28px;
+	}
+}
+
+@media screen and (max-width:1200px){
+	.indicated-consortiurn h4 {
+		width: 61%;
+	}
+	ul.provided-enrollelist {
+		width: 70%;
+	}
+	.form-filed-content span a {
+		clear: both;
+		display: block;
+	}
+	.dotowner-card h3 {
+		font-size: 18px;
+		line-height: 29px;
+	}
+}
+
+@media screen and (max-width:1150px) {
+	.dashboard-card .card-header h4, .graphouter h3 {
+		font-size: 19px;
+	}
+	.stats-box-detail h6, .previous-employer .form-group label .italic-text, .form-filed .form-group i.italic-text {
+		font-size: 12px;
+	}
+	.stats-box-detail h3 {
+		font-size: 16px;
+	}
+	.stats-boxicon i {
+		font-size: 24px;
+		font-weight: 200;
+	}
+	.stats-box-detail.access-box h3,.stats-boxicon {
+		line-height: 23px;
+	}
+	.dsclient-listing li a {
+		font-size: 14px;
+	}
+	.selectleft {
+		width: 30%;
+	}
+	.sainput-group {
+		width: 46% ;
+	}
+	.employee-table-heading span {
+		width: 650px;
+	}
+	.previous-employer .form-group .hereby-authorize {
+		font-size: 16px;
+		margin: 12px 0;
+		line-height: 23px;
+	}
+	
+}
+
+@media screen and (max-width:1024px) {
+	.dashboard-card .card-header h4, .graphouter h3 {
+		font-size: 16px;
+	}
+	.search-btngroup button {
+		padding: 0px 12px;
+	}
+	.button-group a {
+		padding: 6px 9px;
+	}
+}
+
+@media (min-width: 992px) {
+	.sidebar-icon-only .navbar .navbar-menu-wrapper {
+		width: calc(100% - 0px);
+	}
+}
+
+@media (max-width: 992px) {
+	.home-screen1 {
+		width: 90%;
+	}
+	.content-wrapper {
+		padding: 14px 2.25rem;
+	}
+	.topheader {
+		height: 30px;
+	}
+	.sidebar {
+    	z-index: 9999;
+	}	
+	.main-content {
+		margin-top: 83px;
+	}
+	.navbar .navbar-menu-wrapper .navbar-toggler:not(.navbar-toggler-right),.navbar .navbar-brand-wrapper .navbar-brand.brand-logo {
+		display: none;
+	}
+	.navbar .navbar-menu-wrapper .navbar-toggler.navbar-toggler-right {
+		padding-left: 15px;
+		border-right: none;
+		display: block;
+	}
+	.navbar .navbar-menu-wrapper {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.navbar .navbar-brand-wrapper {
+		width: 55px;
+	}
+	.footer,.fixed-top {
+		margin-left: 0;
+		width: 100%;
+	}
+	.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown,.navbar .navbar-brand-wrapper .navbar-brand.brand-logo-mini {
+		display:inline-block;
+	}
+	.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown {
+		left: auto !important;
+		right: 30px;
+		top: 53px;
+		width: 25%;
+		margin: 0;
+	}
+	.navbar {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.navbar .navbar-brand-wrapper {
+		width: 75px;
+	}
+	.navbar-collapse {
+		display: flex;
+		margin-top: 0.5rem;
+	}
+	.sidebar-offcanvas {
+		position: fixed;
+		max-height: calc(100vh - 70px);
+		top: 75px;
+		bottom: 0;
+		overflow: auto;
+		right: -260px;
+		-webkit-transition: all 0.25s ease-out;
+		transition: all 0.25s ease-out;
+	}
+	.sidebar-offcanvas.active {
+		right: 0;
+	}
+	.main-panel,.consortium-form input.form-control {
+		margin-left: 0;
+		width: 100%;
+	}
+	.button-group a {
+		padding: 6px 7px;
+	}
+	.accurate-rightlogo img,.indicated-consortiurn h4{
+		width: 80%;
+	}
+	.form-group.tcp-inputgroup {
+		width: 78%;
+	}
+	.cpuc-enrollment-sections h3 {
+		line-height: 28px;
+	}
+	ul.provided-enrollelist {
+		width: 96%;
+	}
+	.checkedpre {
+		width: 98%;
+	}
+	.alc-sectionbox h4 {
+		font-size: 15px;
+	}
+	.alc-sectionbox .form-check {
+		width: 30%;
+	}
+	.cpuc-enrollment-header h2, .withouter-header h2 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.cpuc-enrollment-header h4, .withouter-header h4 {
+		font-size: 17px;
+	}
+	.alc-agreement-detail h4.text-underline.text-center.margin-bottom20.btnmargintop {
+		font-size: 17px;
+		line-height: 26px;
+	}
+	.alc-agreement-detail h4 {
+		font-size: 17px;
+		line-height: 25px;
+	}
+	.tablecheck-one .form-check {
+		text-align: left;
+	}
+	.date-authorize p {
+		line-height: 27px;
+	}
+	.dotowner-card h3 {
+		min-height: 110px;
+	}
+	.form-check.checknoyesbox.margin-left20 {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.loginpage {
+		transform: translate(-50%, -15%);
+		margin-bottom: 50px;
+	}
+	.home-screen1 {
+		width: 90%;
+	}
+	li.nav-item.nav-profile.dropdown {
+		border-right: 1px solid #e7eae9;
+		margin-right: 5px;
+	}
+	.notificationbox a#notificationDropdown {
+		padding: 14px 0;
+	}
+	.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+		margin-left: .8rem;
+		margin-right: .8rem;
+	}
+	.navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown {
+		right: 0px;
+		width: 30%;
+	}
+	.page-title,.table-outer{
+		margin: 0px ;
+	}
+	.margin-bottom30{
+		margin-bottom: 30px;
+	}
+	.progress-detail.clearfix {
+		margin-bottom: 0px;
+	}
+	.progress {
+		margin: 35px 0 0;
+	}
+ 	.tcp-inputgroup input {
+		width: 100%;
+	}
+	.search-field .input-group {
+		padding: 8px 0 8px 0px;
+	}
+	.search-btngroup.btnmargintop {
+		float: right;
+		margin: 10px 0 20px;
+	}
+	.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown {
+		float: left;
+	}
+	.nav-profile-text {
+		padding: 6px 0 4px;
+	}
+	.date-time-column span {
+		width: 155px;
+	}
+	.file-upload-wrapper {
+		width: 70%;
+	}
+	.mis-selection h5 {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 22px;
+	}
+	.progress {
+		width: 86%;
+	}
+	span.totalspan {
+		width: 13%;
+	}
+	.btnmargintop {
+		margin-top: 9px;
+		margin-left: 3px;
+	}
+	.accurate-rightlogo {
+		text-align: center;
+	}
+	.accurate-rightlogo img {
+		width: 40%;
+	}
+	.specimen-heading h3 {
+		font-size: 17px;
+		line-height: 24px;
+		margin-bottom: 5px;
+	}
+	.selectleft {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.dsclient-outer .slimScrollDiv, .dsclient-outer .dsclient-listing {
+		height: 470px !important;
+	}
+	.companyname-input input {
+		width: 78% !important;
+	}
+	.agreement-header h2 {
+		font-size: 22px;
+		line-height: 35px;
+	}
+	.agreement-header img {
+		width: 33%;
+	}
+	.result-question p input {
+		width: 115px;
+	}
+	.llc-authorized h3 {
+		margin: 0 0 20px;
+		font-size: 20px;
+	}
+	table.consent-outertable {
+		width: 1000px;
+	}
+	.dotowner-card h3 {
+		min-height: auto;
+	}
+}
+
+@media screen and (max-width:660px){
+	.owner-printed-input input,.companyname-input input,.owner-signature-input input {
+		width: 100% !important;
+		clear: both;
+	}
+	.agreement-form .form-group {
+		display: block;
+		text-align: left;
+	}
+	.consent-group1 span {
+		font-size: 15px;
+	}
+	.cpuc-enrollment-header h4 {
+		font-size: 17px;
+	}
+	.indicated-consortiurn h4 {
+		line-height: 24px;
+	}
+	.cpuc-enrollment-sections h3 {
+		line-height: 24px;
+		font-size: 18px;
+	}
+	.alc-agreement-detail p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.cpuc-enrollment-header h2, .withouter-header h2 {
+		font-size: 19px;
+		line-height: 30px;
+	}
+	.cpuc-enrollment-header h4, .withouter-header h4 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+@media screen and (max-width:580px){
+	.loginpage {
+		width: 90%;
+	}
+	.navbar .navbar-menu-wrapper {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	li.nav-item.dropdown.notificationbox {
+		padding: 0px;
+		margin-right: 0px;
+	}
+	.h5heading {
+		font-size: 17px;
+		margin: 0 0 10px;
+	}
+	.page-title {
+		font-size: 17px;
+		line-height: 22px;
+	}
+	.loginpage {
+		transform: inherit;
+		margin-bottom: 50px;
+		left: 0;
+		right: 0;
+		margin: 20px auto;
+		top: 0;
+		bottom: 0;
+		position: inherit;
+	}
+}
+
+@media (max-width: 490px) {
+	.navbar .navbar-brand-wrapper {
+		width: 55px;
+	}
+	.forgot-text {
+		width: 217px;
+	}
+	.navbar .navbar-brand-wrapper .brand-logo-mini {
+		padding-top: 0px;
+	}
+	.logintab li a,.forgot-text {
+		font-size: 14px;
+	}
+	.logintab li {
+		margin-right: 11px;
+	}
+	.login-form h2,.nav-profile-text p  {
+		font-size: 15px;
+	}
+	.login-form h6,.form-check .form-check-label {
+		font-size: 13px;
+	}
+	.nav-profile-text i.mdi.mdi-account-circle {
+		display: none;
+	}
+	.navbar .navbar-menu-wrapper .navbar-toggler.navbar-toggler-right {
+		padding-left: 13px;
+		font-size: 24px;
+	}
+	.notificationbox {
+		display: none !important;
+	}
+	.progress {
+		width: 76%;
+	}
+	span.totalspan {
+		width: 22%;
+	}
+	.client-info-header a span {
+		clear: both;
+		display: block;
+		padding-top: 6px;
+	}
+	.uploadlogo .file-upload-wrapper {
+		width: 87%;
+	}
+	.cpuc-enrollment-header img {
+		margin: 20px 0;
+		width: 100%;
+	}
+	.agreement-header img {
+		width: 60%;
+	}
+	.agreement-header h2 {
+		font-size: 20px;
+		line-height: 32px;
+	}
+	.date-authorize p {
+		line-height: 28px;
+	}
+	.llc-authorized h3 {
+		font-size: 18px;
+		line-height: 23px;
+	}
+	.addplus-box i {
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		font-size: 25px;
+	}
+	.addplus-box {
+		position: relative;
+		right: 8px;
+		top: 5px;
+	}
+	.login-logo img {
+		width: 100%;
+	}
+	.margin-left20 {
+		margin-left: 7px;
+	}
+}
+@media (max-width: 380px){
+	.logintab li a {
+		font-size: 12px;
+	}
+	.logintab li {
+		margin-right: 5px;
+	}
+	.exportall-btn ul.dropdown-menu {
+		width: 265px;
+	}
+	.exportall-btn ul.dropdown-menu a {
+		word-wrap: break-word;
+		padding: 2px 8px;
+		font-size: 13px;
+	}
+	.file-upload-wrapper,.uploadlogo .file-upload-wrapper {
+		width: 100%;
+	}
+	.search-btngroup button {
+		padding: 0px 9px;
+		font-size: 15px;
+	}
+	.exportall-btn button {
+		padding: 0 5px;
+		font-size: 15px;
+	}
+}

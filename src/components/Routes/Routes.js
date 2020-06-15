@@ -9,6 +9,21 @@ const PublicForms = (props) => (
 		}
 	</DynamicImport>
 );
+const LoginForm = (props) => (
+	<DynamicImport load={() => import("../../views/LoginForms")}>
+		{(Component) =>
+			Component === null ? <ComponentLoad /> : <Component {...props} />
+		}
+	</DynamicImport>
+);
+
+const AdminWrapper = (props) => (
+	<DynamicImport load={() => import("../../views/AdminWrapper")}>
+		{(Component) =>
+			Component === null ? <ComponentLoad /> : <Component {...props} />
+		}
+	</DynamicImport>
+);
 
 const FormRouteHandler = (props) => (
 	<DynamicImport load={() => import("../FormComponents/FormRouteHandler")}>
@@ -23,6 +38,8 @@ const Routes = (props) => {
 		<BrowserRouter>
 			<Switch>
 				<Route path="/" exact component={PublicForms} />
+				<Route path="/login" exact component={LoginForm} />
+				<Route path="/admin" exact component={AdminWrapper} />
 				<Route exact path="/forms/:formUrl" render={props => <FormRouteHandler {...props} />} />
 
 			</Switch>
