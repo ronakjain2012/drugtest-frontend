@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import DynamicImport from "./../Utils/DynamicImport";
 import ComponentLoad from "./../Utils/ComponentLoad";	
-import { withRouter } from 'react-router';
 
 const PublicForms = (props) => (
 	<DynamicImport load={() => import("../../views/PublicForms")}>
@@ -49,4 +48,4 @@ const Routes = (props) => {
 	);
 };
 
-export default withRouter(Routes);
+export default Routes;
