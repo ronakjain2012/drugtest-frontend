@@ -471,8 +471,8 @@
     "lando": {
         "form_id": "lando",
         "parent_id": null,
-        "title": "Lan Do & Associates, LLC",
-        "caption": "Lan Do & Associates, LLC",
+        "title": "Lan Do",
+        "caption": "Lan Do",
         "decription": "Release Authorization",
         "children": false,
         "priority": 8,

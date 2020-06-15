@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PublicFormListing from "../components/FormComponents/PublicFormListing";
 import FormsData from "./../config/PublicForms.json";
-import { Card,Row,Col } from "react-bootstrap";
+import { Card,Row,Col, Container } from "react-bootstrap";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { withRouter } from "react-router-dom";
 
@@ -26,30 +26,32 @@ const PublicForms = (props) => {
 
 	return (
 		<div className="PublicForms self-center">
-			<Card className="shadow-md rounded-sm justify-content-center align-self-center align-content-center" style={{'max-width':'90rem'}}>
-				{parentId ? (
-					<Card.Header className="text-left bg-transparent">
-						<h3 onClick={() => goBack(parentId)}>
-							<IoMdArrowRoundBack /> Back
-						</h3>
-					</Card.Header>
-				) : (
-					""
-				)}
-				<Card.Body>
-                    <Row>
-                        <Col className="text-center">
-                            <img src="/logo/logo.jpg" alt={'React'} style={{'margin-bottom':'70px'}}/>
-                        </Col>
-                    </Row>
-					<PublicFormListing
-						parentId={parentId}
-						forms={formListing}
-						goBack={goBack}
-						setNext={setNext}
-					/>
-				</Card.Body>
-			</Card>
+			<Container>
+				<Card className="home-screen">
+					{parentId ? (
+						<Card.Header className="text-left bg-transparent">
+							<h3 onClick={() => goBack(parentId)}>
+								<IoMdArrowRoundBack /> Back
+							</h3>
+						</Card.Header>
+					) : (
+						""
+					)}
+					<Card.Body>
+						<Row>
+							<Col className="text-center margin-bottom30">
+								<img src="/logo/logo.jpg" alt={'React'} />
+							</Col>
+						</Row>
+						<PublicFormListing
+							parentId={parentId}
+							forms={formListing}
+							goBack={goBack}
+							setNext={setNext}
+						/>
+					</Card.Body>
+				</Card>
+			</Container>
 		</div>
 	);
 };

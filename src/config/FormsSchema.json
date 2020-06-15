@@ -4407,120 +4407,66 @@
                 "field_id": "date",
                 "type": "input",
                 "parent_id": null,
-                "style": "full-width",
+                "style": "3 margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Date"
             },
-            "txt_node1": {
-                "type": "text",
-                "data": "I,",
-                "parent_id": null,
-                "style": "font-18",
-                "custom_style": "font-18"
-            },
+
             "name": {
-                "lable": "Name",
+                "lable": "First Name",
                 "field_id": "name",
                 "type": "input",
                 "parent_id": null,
-                "style": "",
+                "style": "3 margin-bottom20",
                 "custom_style": "",
                 "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Name"
+                "lable_hidden": false,
+                "placeholder": " First Name"
             },
-            "txt_node2": {
-                "type": "text",
-                "data": " authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+
+            "middle-name": {
+                "lable": "Middle Name",
+                "field_id": "middleName",
+                "type": "input",
                 "parent_id": null,
-                "style": "6",
-                "custom_style": "font-18 col-lg-8"
+                "style": "3 margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Middle Name"
             },
+
+            "last-name": {
+                "lable": "Last Name",
+                "field_id": "lastName",
+                "type": "input",
+                "parent_id": null,
+                "style": "3 margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Last Name"
+            },
+            
             "drivingLicense": {
                 "lable": "Driving Licence",
                 "field_id": "drivingLicense",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "3 margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Driving Licence"
-            },
-            "state": {
-                "lable": "State",
-                "field_id": "state",
-                "type": "select_state",
-                "parent_id": null,
-                "style": "6",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": false,
-                "placeholder": "State"
-            },
-            "mailingAddress": {
-                "lable": "Mailing Address",
-                "field_id": "mailingAddress",
-                "type": "parent",
-                "parent_id": null,
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Mailing Address"
-            },
-            "mailingAddress_address": {
-                "lable": "Mailing Address",
-                "field_id": "address",
-                "type": "textarea",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Address"
-            },
-            "mailingAddress_city": {
-                "lable": "Mailing City",
-                "field_id": "city",
-                "type": "input",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "City"
-            },
-            "mailingAddress_state": {
-                "lable": "Mailing State",
-                "field_id": "state",
-                "type": "select_state",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "State"
-            },
-            "mailingAddress_zipcode": {
-                "lable": "Mailing Zipcode",
-                "field_id": "zipcode",
-                "type": "input",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Zipcode"
             },
             "phone_number": {
                 "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "3 margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
@@ -4531,7 +4477,7 @@
                 "field_id": "email",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "3 margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
@@ -4542,11 +4488,67 @@
                 "field_id": "signature",
                 "type": "input",
                 "parent_id": null,
-                "style": "full-width",
+                "style": "3 margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Signature"
+            },
+            
+            "mailingAddress": {
+                "lable": "Address",
+                "field_id": "mailingAddress",
+                "type": "parent",
+                "parent_id": null,
+                "style": "3 ",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": true,
+                "placeholder": "Address"
+            },
+            "mailingAddress_address": {
+                "lable": "Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": "mailingAddress",
+                "style": "3 margin-bottom20 addressbox",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Address"
+            },
+            "mailingAddress_city": {
+                "lable": "City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3 margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "City"
+            },
+            "mailingAddress_state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": "mailingAddress",
+                "style": "3 margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "mailingAddress_zipcode": {
+                "lable": "Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": "mailingAddress",
+                "style": "3 margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Zipcode"
             }
         },
         "get_action": {

@@ -1,28 +1,29 @@
 import React from "react";
-import { Link,withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import T from "../Utils/T";
-import { Card, CardDeck } from "react-bootstrap";
+import { Card, CardDeck, Col, Row } from "react-bootstrap";
 
 const PublicFormListing = (props) => {
 	return (
 		<div className="PublicFormListing">
-					<CardDeck>
-						{props.forms.map((item) =>
-								<Link to={item.url} key={item.form_id} onClick={()=>{props.setNext(item.form_id)}}>
-									<Card
-										className="public-form-cards shadow-md shadow-md-hover btn-gradient-hover btn-gradient-primary rounded-sm"
-										key={item.form_id} 
-										style={{ width: '25rem' }}
-									>
-										<Card.Body  className="text-center">
-											<Card.Text>
-												<T t={item.title} />
-											</Card.Text>
-										</Card.Body>
-									</Card>
-								</Link>
-						)}
-					</CardDeck>
+			<CardDeck>
+				<Row>
+					{props.forms.map((item, index) =>
+						<Col key={`col${index}`} md={4} lg={4}>
+							<Link to={item.url} onClick={() => { props.setNext(item.form_id) }}>
+								<Card className="home-cardbox btn-gradient-hover btn-gradient-primary"
+									key={item.form_id}>
+									<Card.Body className="text-center">
+										<Card.Text>
+											<T t={item.title} />
+										</Card.Text>
+									</Card.Body>
+								</Card>
+							</Link>
+						</Col>
+					)}
+				</Row>
+			</CardDeck>
 		</div>
 	);
 };
