@@ -5053,7 +5053,7 @@
             },
             "Relationship": {
                 "lable": "Relationship to Beneficiary/Ies",
-                "field_id": "tcp_status",
+                "field_id": "tcp_status_beneficiary",
                 "type": "radio",
                 "parent_id": null,
                 "style": "6",
