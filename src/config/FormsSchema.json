@@ -3877,7 +3877,7 @@
     "taxi": {
         "form_id": "taxi",
         "parent_id": null,
-        "inline_form": true,
+        "inline_form": false,
         "form_styling": "page_center",
         "page_head": {
             "title": "Release Authorization",
@@ -3900,30 +3900,41 @@
                 "lable_hidden": false,
                 "placeholder": "Date"
             },
-            "txt_node1": {
-                "type": "text",
-                "data": "I,",
-                "parent_id": null,
-                "style": "font-18",
-                "custom_style": "font-18"
-            },
+
             "name": {
-                "lable": "Name",
+                "lable": "First Name",
                 "field_id": "name",
                 "type": "input",
                 "parent_id": null,
-                "style": "",
+                "style": "4 margin-bottom20",
                 "custom_style": "",
                 "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Name"
+                "lable_hidden": false,
+                "placeholder": " First Name"
             },
-            "txt_node2": {
-                "type": "text",
-                "data": "authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results to Oakland Taxi",
+
+            "middle-name": {
+                "lable": "Middle Name",
+                "field_id": "middleName",
+                "type": "input",
                 "parent_id": null,
-                "style": "full-width",
-                "custom_style": "font-18"
+                "style": "4 margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Middle Name"
+            },
+
+            "last-name": {
+                "lable": "Last Name",
+                "field_id": "lastName",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Last Name"
             },
             "drivingLicense": {
                 "lable": "Driving Licence",
@@ -4034,6 +4045,13 @@
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Signature"
+            },
+            "txt_node2": {
+                "type": "agree",
+                "data": "I authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results to Oakland Taxi",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
             }
         },
         "get_action": {
@@ -4550,6 +4568,13 @@
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Signature"
+            },
+            "txt_node2": {
+                "type": "agree",
+                "data": "I authorize Accurate C&S Services Inc. to release my drug and/or alcohol test results to Lando & Associates",
+                "parent_id": null,
+                "style": "full-width",
+                "custom_style": "font-18"
             }
         },
         "get_action": {

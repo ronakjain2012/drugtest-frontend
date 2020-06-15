@@ -89,6 +89,15 @@ const ElFileUpload = (props) => (
 );
 
 
+const ElAgreementField = (props) => (
+	<DynamicImport load={() => import("../GenericComponents/AgreementField")}>
+		{(Component) =>
+			Component === null ? <ComponentLoad /> : <Component {...props} />
+		}
+	</DynamicImport>
+);
+
+
 const RenderElement = (props) => {
 	switch (props.field.type) {
 		case "input":
@@ -109,6 +118,8 @@ const RenderElement = (props) => {
 			return <ElDate schema={props.field} />;
 		case "file":
 			return <ElFileUpload schema={props.field} />;
+		case "agree":
+			return <ElAgreementField schema={props.field} />;
 		case "hr":
 			return <ElHr />;
 		case "parent":
