@@ -3869,11 +3869,6 @@
             "type": ""
         }
     },
-
-
-
-
-
     "taxi": {
         "form_id": "taxi",
         "parent_id": null,
@@ -4088,7 +4083,7 @@
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Date"
-            },   
+            },
             "name": {
                 "lable": "First Name",
                 "field_id": "name",
@@ -4312,7 +4307,7 @@
                 "lable_hidden": false,
                 "placeholder": "Last Name"
             },
-            
+
             "drivingLicense": {
                 "lable": "Driving Licence",
                 "field_id": "drivingLicense",
@@ -4502,7 +4497,7 @@
                 "lable_hidden": false,
                 "placeholder": "Last Name"
             },
-            
+
             "drivingLicense": {
                 "lable": "Driving Licence",
                 "field_id": "drivingLicense",
@@ -4536,8 +4531,8 @@
                 "lable_hidden": false,
                 "placeholder": "Email"
             },
-           
-            
+
+
             "mailingAddress": {
                 "lable": "Address",
                 "field_id": "mailingAddress",
@@ -4817,7 +4812,7 @@
                 "lable_inline": true,
                 "placeholder": "Driver Signature"
             }
-           
+
         },
         "get_action": {
             "url": "",
@@ -5105,7 +5100,8 @@
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "col-lg-6"
-            }, "state": {
+            },
+            "state": {
                 "lable": "Drivers License State",
                 "field_id": "state",
                 "type": "select_state",
