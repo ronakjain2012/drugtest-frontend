@@ -93,7 +93,7 @@
             "owner_signature": {
                 "lable": "Driver or Owner Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -311,7 +311,7 @@
             "driver_details": {
                 "lable": "",
                 "field_id": "driver_details",
-                "type": "parent_multi",
+                "type": "parent",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -588,7 +588,7 @@
             "driver_details": {
                 "lable": "",
                 "field_id": "driver_details",
-                "type": "parent_multi",
+                "type": "parent",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -762,7 +762,7 @@
             "owner_signature": {
                 "lable": "Driver or Owner Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -2264,7 +2264,7 @@
             "owner_signature": {
                 "lable": "Driver or Owner Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -2615,7 +2615,7 @@
             "owner_signature": {
                 "lable": "Employee's Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -3010,7 +3010,7 @@
             "owner_signature": {
                 "lable": "Driver or Owner Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -3361,7 +3361,7 @@
             "owner_signature": {
                 "lable": "Employee's Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -3814,7 +3814,7 @@
             "Employee Signature": {
                 "lable": "Employee Signature",
                 "field_id": "Employee Signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "7",
                 "custom_style": "",
@@ -3838,7 +3838,7 @@
             "Witness Signature": {
                 "lable": "Witness Signature",
                 "field_id": "Witness Signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "7",
                 "custom_style": "",
@@ -3948,7 +3948,7 @@
                 "placeholder": "State"
             },
             "mailingAddress": {
-                "lable": "Mailing Address",
+                "lable": "Address",
                 "field_id": "mailingAddress",
                 "type": "parent",
                 "parent_id": null,
@@ -3956,10 +3956,10 @@
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": true,
-                "placeholder": "Mailing Address"
+                "placeholder": "Address"
             },
             "mailingAddress_address": {
-                "lable": "Mailing Address",
+                "lable": "Address",
                 "field_id": "address",
                 "type": "textarea",
                 "parent_id": "mailingAddress",
@@ -4027,7 +4027,7 @@
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4198,7 +4198,7 @@
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4369,7 +4369,7 @@
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4540,7 +4540,7 @@
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4685,7 +4685,7 @@
             "Driver Signature": {
                 "lable": "Driver Signature",
                 "field_id": "owner_phone_number",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",

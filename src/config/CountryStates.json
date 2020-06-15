@@ -1,10 +1,33 @@
-[
-    {
-        "name":"Rajasthan",
-        "value": "Rajasthan"
+[{
+        "name": "Alabama (AL)",
+        "value": "AL"
     },
     {
-        "name":"Maharastra",
-        "value": "Maharastra"
+        "name": "Alaska (AK)",
+        "value": "AK"
+    }, {
+        "name": "Arizona (AZ)",
+        "value": "AK"
+    }, {
+        "name": "Arkansas (AR)",
+        "value": "AK"
+    }, {
+        "name": "Colorado (CO)",
+        "value": "AK"
+    }, {
+        "name": "Connecticut (CT)",
+        "value": "AK"
+    }, {
+        "name": "Delaware (DE)",
+        "value": "AK"
+    }, {
+        "name": "District Of Columbia (DC)",
+        "value": "AK"
+    }, {
+        "name": "Florida (FL)",
+        "value": "AK"
+    }, {
+        "name": "Georgia (GA)",
+        "value": "AK"
     }
 ]
