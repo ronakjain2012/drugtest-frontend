@@ -186,16 +186,13 @@ const FormGenerator = (props) => {
 							</Col>
 						) : (
 							<Col lg="12">
-								<Col lg="12">
+								<div className="form-topheader">
 									<img src={form.page_body.logo} alt={form.page_body.title} width="20%"></img>
-								</Col>
-								<Col lg="12">
 									<h2>{form.page_body.title}</h2>
-								</Col>
-								<Col lg="12">
 									<h2>{form.page_body.description}</h2>
-								</Col>
+								</div>
 							</Col>
+							
 						)}
 					</Row>
 					<Form inline={form.inline_form}>
@@ -213,15 +210,17 @@ const FormGenerator = (props) => {
 							)}
 						</Row>
 					</Form>
-					<br />
+
 					<Row className="text-right">
 						<Col>
-							<Button variant="primary" size="md" active>
-								Save
-							</Button>{" "}
-							<Button variant="primary" size="md" active>
-								Save & Print
-							</Button>{" "}
+							<div className="bottom-btn-group pull-right">
+								<Button variant="primary" size="md" active>
+									Save
+								</Button>{" "}
+								<Button variant="primary" size="md" active>
+									Save & Print
+								</Button>{" "}
+							</div>
 						</Col>
 					</Row>
 				</Card.Body>
