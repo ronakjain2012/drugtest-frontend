@@ -12,6 +12,9 @@
 a:hover{
   text-decoration: none;
 }
+button:focus{
+  outline: none;
+}
 
 // random
 @mixin gradientBg($direction, $startColor, $endColor) {
@@ -182,6 +185,9 @@ $primary-dark: lighten($primary, 10%);
 .form-group.margin-bottom20{
   margin-bottom: 15px;
 }
+.checkbox-text{
+  margin: 0 !important;
+}
 .home-screen{
   width: 800px;
   background: #fff;
@@ -217,4 +223,74 @@ $primary-dark: lighten($primary, 10%);
 
 .addressbox textarea {
   height: 40px;
+}
+
+.form-topheader{
+  margin-bottom: 30px;
+  img{
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  h2{
+    font-size:28px;
+    line-height: 40px;
+    margin: 0;
+    color: #424e58;
+    font-weight: 600;
+  }
+}
+
+.formlabel{
+  .form-fiel{
+    margin: 0;
+  }
+  label{
+    color: #30353a;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  input{
+    &::placeholder {
+      color: #8f8f8f;  
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+
+}
+.form-group{
+  margin-bottom: 0;
+}
+
+
+.bottom-btn-group {
+  button {
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  padding: 0px 15px;
+  font-size: 16px;
+  height: 35px;
+  line-height: 35px;
+  transition: all 0.5s ease;
+  background: #1e9ff2 !important;
+  }
+}
+
+.react-date-picker{
+  width: 100% !important;
+}
+
+.margin-top30{
+  margin-top: 30px;
+}
+
+
+
+.driver-heading{
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }

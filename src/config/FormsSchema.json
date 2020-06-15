@@ -3889,136 +3889,56 @@
             "description": "Release Authorization"
         },
         "field_schema": {
-            "date": {
-                "lable": "Date",
-                "field_id": "date",
-                "type": "date",
-                "parent_id": null,
-                "style": "full-width",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": false,
-                "placeholder": "Date"
-            },
-
             "name": {
                 "lable": "First Name",
                 "field_id": "name",
                 "type": "input",
                 "parent_id": null,
-                "style": "4 margin-bottom20",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": " First Name"
             },
-
             "middle-name": {
                 "lable": "Middle Name",
                 "field_id": "middleName",
                 "type": "input",
                 "parent_id": null,
-                "style": "4 margin-bottom20",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Middle Name"
             },
-
             "last-name": {
                 "lable": "Last Name",
                 "field_id": "lastName",
                 "type": "input",
                 "parent_id": null,
-                "style": "4 margin-bottom20",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Last Name"
             },
-            "drivingLicense": {
-                "lable": "Driving Licence",
-                "field_id": "drivingLicense",
-                "type": "input",
+            "date": {
+                "lable": "Date",
+                "field_id": "date",
+                "type": "date",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "placeholder": "Driving Licence"
-            },
-            "state": {
-                "lable": "State",
-                "field_id": "state",
-                "type": "select_state",
-                "parent_id": null,
-                "style": "6",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": false,
-                "placeholder": "State"
-            },
-            "mailingAddress": {
-                "lable": "Address",
-                "field_id": "mailingAddress",
-                "type": "parent",
-                "parent_id": null,
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Address"
-            },
-            "mailingAddress_address": {
-                "lable": "Address",
-                "field_id": "address",
-                "type": "textarea",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Address"
-            },
-            "mailingAddress_city": {
-                "lable": "Mailing City",
-                "field_id": "city",
-                "type": "input",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "City"
-            },
-            "mailingAddress_state": {
-                "lable": "Mailing State",
-                "field_id": "state",
-                "type": "select_state",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "State"
-            },
-            "mailingAddress_zipcode": {
-                "lable": "Mailing Zipcode",
-                "field_id": "zipcode",
-                "type": "input",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Zipcode"
+                "placeholder": "Date"
             },
             "phone_number": {
                 "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
@@ -4029,18 +3949,73 @@
                 "field_id": "email",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Email"
             },
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "city": {
+                "lable": "City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "City"
+            },
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "zipcode": {
+                "lable": "Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Zipcode"
+            },
+            "address": {
+                "lable": "Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": null,
+                "style": "8 addressbox formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Address"
+            },         
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
                 "type": "file",
                 "parent_id": null,
-                "style": "full-width",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
@@ -4050,7 +4025,7 @@
                 "type": "agree",
                 "data": "I authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results to Oakland Taxi",
                 "parent_id": null,
-                "style": "full-width",
+                "style": "full-width ",
                 "custom_style": "font-18"
             }
         },
@@ -4078,125 +4053,59 @@
             "description": "Release Authorization"
         },
         "field_schema": {
+             "name": {
+                "lable": "First Name",
+                "field_id": "name",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 margin-bottom20 formlabel",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": " First Name"
+            },
+
+            "middle-name": {
+                "lable": "Middle Name",
+                "field_id": "middleName",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 margin-bottom20 formlabel",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Middle Name"
+            },
+
+            "last-name": {
+                "lable": "Last Name",
+                "field_id": "lastName",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 margin-bottom20 formlabel",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Last Name"
+            },
+
             "date": {
                 "lable": "Date",
                 "field_id": "date",
                 "type": "date",
                 "parent_id": null,
-                "style": "full-width",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Date"
-            },
-            "txt_node1": {
-                "type": "text",
-                "data": "I,",
-                "parent_id": null,
-                "style": "font-18",
-                "custom_style": "font-18"
-            },
-            "name": {
-                "lable": "Name",
-                "field_id": "name",
-                "type": "input",
-                "parent_id": null,
-                "style": "",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Name"
-            },
-            "txt_node2": {
-                "type": "text",
-                "data": " authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results to",
-                "parent_id": null,
-                "style": "full-width",
-                "custom_style": "font-18"
-            },
-            "drivingLicense": {
-                "lable": "Driving Licence",
-                "field_id": "drivingLicense",
-                "type": "input",
-                "parent_id": null,
-                "style": "6",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": false,
-                "placeholder": "Driving Licence"
-            },
-            "state": {
-                "lable": "State",
-                "field_id": "state",
-                "type": "select_state",
-                "parent_id": null,
-                "style": "6",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": false,
-                "placeholder": "State"
-            },
-            "mailingAddress": {
-                "lable": "Mailing Address",
-                "field_id": "mailingAddress",
-                "type": "parent",
-                "parent_id": null,
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Mailing Address"
-            },
-            "mailingAddress_address": {
-                "lable": "Mailing Address",
-                "field_id": "address",
-                "type": "textarea",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Address"
-            },
-            "mailingAddress_city": {
-                "lable": "Mailing City",
-                "field_id": "city",
-                "type": "input",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "City"
-            },
-            "mailingAddress_state": {
-                "lable": "Mailing State",
-                "field_id": "state",
-                "type": "select_state",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "State"
-            },
-            "mailingAddress_zipcode": {
-                "lable": "Mailing Zipcode",
-                "field_id": "zipcode",
-                "type": "input",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Zipcode"
             },
             "phone_number": {
                 "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
@@ -4207,22 +4116,87 @@
                 "field_id": "email",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Email"
             },
+
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "city": {
+                "lable": "City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "City"
+            },
+
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "zipcode": {
+                "lable": "Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Zipcode"
+            },
+            "address": {
+                "lable": "Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": null,
+                "style": "8 addressbox formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Address"
+            },
+         
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
                 "type": "file",
                 "parent_id": null,
-                "style": "full-width",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Signature"
+            },
+            "txt_node2": {
+                "type": "agree",
+                "data": "I authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results",
+                "parent_id": null,
+                "style": "full-width ",
+                "custom_style": "font-18"
             }
         },
         "get_action": {
@@ -4249,125 +4223,59 @@
             "description": "Release Authorization"
         },
         "field_schema": {
+            "name": {
+                "lable": "First Name",
+                "field_id": "name",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 margin-bottom20 formlabel",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": " First Name"
+            },
+
+            "middle-name": {
+                "lable": "Middle Name",
+                "field_id": "middleName",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 margin-bottom20 formlabel",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Middle Name"
+            },
+
+            "last-name": {
+                "lable": "Last Name",
+                "field_id": "lastName",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 margin-bottom20 formlabel",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Last Name"
+            },
+
             "date": {
                 "lable": "Date",
                 "field_id": "date",
                 "type": "date",
                 "parent_id": null,
-                "style": "full-width",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Date"
-            },
-            "txt_node1": {
-                "type": "text",
-                "data": "I,",
-                "parent_id": null,
-                "style": "font-18",
-                "custom_style": "font-18"
-            },
-            "name": {
-                "lable": "Name",
-                "field_id": "name",
-                "type": "input",
-                "parent_id": null,
-                "style": "",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Name"
-            },
-            "txt_node2": {
-                "type": "text",
-                "data": " authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results",
-                "parent_id": null,
-                "style": "full-width",
-                "custom_style": "font-18"
-            },
-            "drivingLicense": {
-                "lable": "Driving Licence",
-                "field_id": "drivingLicense",
-                "type": "input",
-                "parent_id": null,
-                "style": "6",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": false,
-                "placeholder": "Driving Licence"
-            },
-            "state": {
-                "lable": "State",
-                "field_id": "state",
-                "type": "select_state",
-                "parent_id": null,
-                "style": "6",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": false,
-                "placeholder": "State"
-            },
-            "mailingAddress": {
-                "lable": "Mailing Address",
-                "field_id": "mailingAddress",
-                "type": "parent",
-                "parent_id": null,
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Mailing Address"
-            },
-            "mailingAddress_address": {
-                "lable": "Mailing Address",
-                "field_id": "address",
-                "type": "textarea",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Address"
-            },
-            "mailingAddress_city": {
-                "lable": "Mailing City",
-                "field_id": "city",
-                "type": "input",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "City"
-            },
-            "mailingAddress_state": {
-                "lable": "Mailing State",
-                "field_id": "state",
-                "type": "select_state",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "State"
-            },
-            "mailingAddress_zipcode": {
-                "lable": "Mailing Zipcode",
-                "field_id": "zipcode",
-                "type": "input",
-                "parent_id": "mailingAddress",
-                "style": "3",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Zipcode"
             },
             "phone_number": {
                 "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
@@ -4378,22 +4286,87 @@
                 "field_id": "email",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Email"
             },
+
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Driving Licence"
+            },
+            "city": {
+                "lable": "City",
+                "field_id": "city",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "City"
+            },
+
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "State"
+            },
+            "zipcode": {
+                "lable": "Zipcode",
+                "field_id": "zipcode",
+                "type": "input",
+                "parent_id": null,
+                "style": "4 formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Zipcode"
+            },
+            "address": {
+                "lable": "Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": null,
+                "style": "8 addressbox formlabel margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Address"
+            },
+         
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
                 "type": "file",
                 "parent_id": null,
-                "style": "full-width",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Signature"
+            },
+            "txt_node2": {
+                "type": "agree",
+                "data": "I authorize Accurate C&S Services, Inc. to release my drug and/or alcohol test results",
+                "parent_id": null,
+                "style": "full-width ",
+                "custom_style": "font-18"
             }
         },
         "get_action": {
@@ -4420,24 +4393,12 @@
             "description": "Release Authorization"
         },
         "field_schema": {
-            "date": {
-                "lable": "Date",
-                "field_id": "date",
-                "type": "date",
-                "parent_id": null,
-                "style": "3 margin-bottom20",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": false,
-                "placeholder": "Date"
-            },
-
             "name": {
                 "lable": "First Name",
                 "field_id": "name",
                 "type": "input",
                 "parent_id": null,
-                "style": "3 margin-bottom20",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
@@ -4449,7 +4410,7 @@
                 "field_id": "middleName",
                 "type": "input",
                 "parent_id": null,
-                "style": "3 margin-bottom20",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
@@ -4461,30 +4422,31 @@
                 "field_id": "lastName",
                 "type": "input",
                 "parent_id": null,
-                "style": "3 margin-bottom20",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Last Name"
             },
-            
-            "drivingLicense": {
-                "lable": "Driving Licence",
-                "field_id": "drivingLicense",
-                "type": "input",
+           
+            "date": {
+                "lable": "Date",
+                "field_id": "date",
+                "type": "date",
                 "parent_id": null,
-                "style": "3 margin-bottom20",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "placeholder": "Driving Licence"
+                "placeholder": "Date"
             },
+
             "phone_number": {
                 "lable": "Phone Number",
                 "field_id": "phone_number",
                 "type": "input",
                 "parent_id": null,
-                "style": "3 margin-bottom20",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
@@ -4495,75 +4457,78 @@
                 "field_id": "email",
                 "type": "input",
                 "parent_id": null,
-                "style": "3 margin-bottom20",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Email"
             },
            
-            
-            "mailingAddress": {
-                "lable": "Address",
-                "field_id": "mailingAddress",
-                "type": "parent",
+
+            "drivingLicense": {
+                "lable": "Driving Licence",
+                "field_id": "drivingLicense",
+                "type": "input",
                 "parent_id": null,
-                "style": "3 ",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": true,
-                "placeholder": "Address"
-            },
-            "mailingAddress_address": {
-                "lable": "Address",
-                "field_id": "address",
-                "type": "textarea",
-                "parent_id": "mailingAddress",
-                "style": "3 margin-bottom20 addressbox",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "placeholder": "Address"
+                "placeholder": "Driving Licence"
             },
-            "mailingAddress_city": {
+
+            "city": {
                 "lable": "City",
                 "field_id": "city",
                 "type": "input",
-                "parent_id": "mailingAddress",
-                "style": "3 margin-bottom20",
+                "parent_id": null,
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "City"
             },
-            "mailingAddress_state": {
+            "state": {
                 "lable": "State",
                 "field_id": "state",
                 "type": "select_state",
-                "parent_id": "mailingAddress",
-                "style": "3 margin-bottom20",
+                "parent_id": null,
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "State"
             },
-            "mailingAddress_zipcode": {
+            "zipcode": {
                 "lable": "Zipcode",
                 "field_id": "zipcode",
                 "type": "input",
-                "parent_id": "mailingAddress",
-                "style": "3 margin-bottom20",
+                "parent_id": null,
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Zipcode"
             },
+            "address": {
+                "lable": "Address",
+                "field_id": "address",
+                "type": "textarea",
+                "parent_id": null,
+                "style": "8 margin-bottom20 addressbox formlabel",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Address"
+            },
+            
+            
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
                 "type": "file",
                 "parent_id": null,
-                "style": "3 margin-bottom20",
+                "style": "4 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
@@ -4606,11 +4571,11 @@
                 "field_id": "dba",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Company Name"
             },
             "Owner Name": {
@@ -4618,11 +4583,11 @@
                 "field_id": "dba",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Owner Name"
             },
             "Owner Phone Number": {
@@ -4630,11 +4595,11 @@
                 "field_id": "dba",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Owner Phone Number"
             },
             "Owner Email": {
@@ -4642,11 +4607,11 @@
                 "field_id": "dba",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Owner Email"
             },
             "Company Address": {
@@ -4654,11 +4619,11 @@
                 "field_id": "dba",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Company Address"
             },
             "City": {
@@ -4666,11 +4631,11 @@
                 "field_id": "dba",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "City"
             },
             "State": {
@@ -4678,11 +4643,11 @@
                 "field_id": "dba",
                 "type": "select_state",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "State"
             },
             "Zipcode": {
@@ -4690,27 +4655,34 @@
                 "field_id": "dba",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Zipcode"
             },
             "hr1": {
                 "type": "hr",
                 "parent_id": null
             },
+            "txt_node1": {
+                "type": "text",
+                "data": "The following driver(s)/owner(s) will drive for this company",
+                "parent_id": null,
+                "style": "full-width ",
+                "custom_style": "font-18 text-center col-lg-12 driver-heading"
+            },
             "First Name": {
                 "lable": "First Name",
                 "field_id": "dba",
                 "type": "input",
                 "parent_id": null,
-                "style": "4",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "First Name"
             },
             "Middle Name": {
@@ -4718,11 +4690,11 @@
                 "field_id": "dba",
                 "type": "input",
                 "parent_id": null,
-                "style": "4",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Middle Name"
             },
             "Last Name": {
@@ -4730,11 +4702,11 @@
                 "field_id": "dba",
                 "type": "input",
                 "parent_id": null,
-                "style": "4",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Last Name"
             },
             "Driver's License": {
@@ -4742,11 +4714,11 @@
                 "field_id": "owner_phone_number",
                 "type": "input",
                 "parent_id": null,
-                "style": "4",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Driver's License"
             },
             "state": {
@@ -4754,11 +4726,11 @@
                 "field_id": "state",
                 "type": "select_state",
                 "parent_id": null,
-                "style": "4",
+                "style": "4 margin-bottom20 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "State"
             },
             "html1": {
@@ -4766,20 +4738,20 @@
                 "field_id": "html1",
                 "type": "html",
                 "parent_id": null,
-                "style": "6",
+                "style": "6  ",
                 "custom_style": "",
-                "data": "<div class=\"col-lg-12 text-center border-1 p-4\"> <img src=\"/logo/logo.jpg\" alt=\"Logo\"> <div class=\"enrollment-header-address\"><p>8105 Edgewater Dr., Suite 225 Oakland, CA 94621</p><p>T: (510) 394-3985</p><p>F: (510) 777-0905 </p></div><h4>AGREEMENT WITH RESPECT TO DRUG AND ALCOHOL TESTING </h4> </div> <p class=\"m-1 margin-top-1\">With my signature, I hereby agree to participate in the Accurate C&amp;S Services, Inc. (Service Agent), a consortium which operates in accordance with 49 CFR Parts 40. I further agree to abide by the Service Agent rules, policies and procedures including testing, notification, enrollment and removal instructions of the Service Agent. Upon receipt of my signed application and applicable fees, the Service Agent, will forward me a complete membership package. If my covered employees have not been enrolled in a random testing pool, they will submit to a pre-employment test as required by 49 CFR Part 40 regulations. If I am an owner-operator or company owner, I agree to submit and have all driver(s) submit to a pre-employment test and random testing will be selected. I agree that the Service Agent will contract with a DHHS certified laboratory, MRO &amp; collection sites on my company's behalf and authorize them to receive all test results from the MRO. As supervisor, I agree to inform the Service Agent of address and phone number changes and current employee status via email to testing@accuratescreens.com. Non-compliance may result in an administration fee or removal from the consortium. As an employee or driver, I authorize the release of my drug test results to my company supervisor or designee and/or DOT agent and/or the CPUC.</p><p><strong>ENROLLMENT:</strong> Enrollment includes: Pre-Employment Urine Screen, Company Certificate of Enrollment, Company Policy, Employee Educational Materials, Random Pool Enrollment, Laboratory Summary Reports and MIS Reports, upon request, a list of Substance Abuse Professional (SAP) will be referred for an employee who violates the drug and alcohol testing Regulations by testing positive or not appearing for a random selection test, if employee is not terminated after a positive urine screen. The SAP will determine the number of return-to-duty and follow-up testing requirements for such employees. As supervisor or Owner-Operator, I agree to maintain all SAP reports and evaluations and will notify the Service Agent of all required testing.</p><p><strong>POST ACCIDENTS:</strong> As Supervisor or Owner-Operator, I agree to notify the Service Agent to perform testing when an employee is involved in an accident that results in a human fatality; citation AND bodily injury requiring medical attention away from accident scene or disabling damage to any vehicle requiring tow away. Breath alcohol testing must occur within 2 hours following an accident but no later than 8 hours. Drug testing must occur immediately but no later than 32 hours following an accident</p><p> Upon notification of random selection, as supervisor/owner I will ensure each driver selected for random testing is notified and receives testing. Non-compliance may result in removal from the program. (driver) may be discharged or otherwise disciplined for any violation by me of said Anti Drug and Alcohol Abuse Policy, for any failure or refusal to provide urine specimens when requested by Accurate C&amp;S Services. Refusal to Test includes, but are not limited to, No-show (failure to appear at the test collection site for random, post-accident, return-to-duty and follow-up testing); Failure to remain at the testing site until the collection is completed; Adulteration (urine specimen containing a substance or a concentration of a substance inconsistent with human urine); Substitution (urine specimen containing creatinine and specific gravity levels inconsistent with human urine); Failure to cooperate with any part of the testing process; e.g., not responding to random selections and disputing the process</p><p>I further understand that I must submit to direct observation testing if a specimen test is reported as Invalid or Negative Dilute with a creatinine &gt;2mg/dL but &lt; 5mg/dL, per MRO request, or per collector's request due to temp. out of range, etc. I further agree that the Service Agent may notify the CPUC, Employer, DOT and/or the California Highway Patrol of any non-compliance and removal from the consortium.</p><p><strong>SERVICE FEES:</strong> This program requires an ANNUAL payment to remain enrolled. Every December, you will receive a notice to renew for the upcoming year. Your payment may be prorated when you enroll after June of each year. </p><p><strong>SUPERVISOR TRAINING:</strong> Reasonable Suspicion training for supervisors is required. The company needs to have an individual trained in physical, behavioral, speech and performance indicators of probable alcohol misuse and use of a controlled substance. The purpose of this training is to enable supervisors to determine whether reasonable suspicion exists to require a driver to undergo testing. Supervisor training is $75.00 per Supervisor</p><p><strong>RETESTING SPLIT SPECIMEN BOTTLE B:</strong> If the donor requests a retest (i.e. wishes to test the second specimen bottle B, if there is one), the company must pay for the retest immediately. The cost of testing specimen bottle B is $275. </p>"
+                "data": "<div class=\"col-lg-12 text-center margin-top30 border-1 p-4\"> <img src=\"/logo/logo.jpg\" alt=\"Logo\"> <div class=\"enrollment-header-address\"><p>8105 Edgewater Dr., Suite 225 Oakland, CA 94621</p><p>T: (510) 394-3985</p><p>F: (510) 777-0905 </p></div><h4>AGREEMENT WITH RESPECT TO DRUG AND ALCOHOL TESTING </h4> </div> <p class=\"m-1 margin-top-1\">With my signature, I hereby agree to participate in the Accurate C&amp;S Services, Inc. (Service Agent), a consortium which operates in accordance with 49 CFR Parts 40. I further agree to abide by the Service Agent rules, policies and procedures including testing, notification, enrollment and removal instructions of the Service Agent. Upon receipt of my signed application and applicable fees, the Service Agent, will forward me a complete membership package. If my covered employees have not been enrolled in a random testing pool, they will submit to a pre-employment test as required by 49 CFR Part 40 regulations. If I am an owner-operator or company owner, I agree to submit and have all driver(s) submit to a pre-employment test and random testing will be selected. I agree that the Service Agent will contract with a DHHS certified laboratory, MRO &amp; collection sites on my company's behalf and authorize them to receive all test results from the MRO. As supervisor, I agree to inform the Service Agent of address and phone number changes and current employee status via email to testing@accuratescreens.com. Non-compliance may result in an administration fee or removal from the consortium. As an employee or driver, I authorize the release of my drug test results to my company supervisor or designee and/or DOT agent and/or the CPUC.</p><p><strong>ENROLLMENT:</strong> Enrollment includes: Pre-Employment Urine Screen, Company Certificate of Enrollment, Company Policy, Employee Educational Materials, Random Pool Enrollment, Laboratory Summary Reports and MIS Reports, upon request, a list of Substance Abuse Professional (SAP) will be referred for an employee who violates the drug and alcohol testing Regulations by testing positive or not appearing for a random selection test, if employee is not terminated after a positive urine screen. The SAP will determine the number of return-to-duty and follow-up testing requirements for such employees. As supervisor or Owner-Operator, I agree to maintain all SAP reports and evaluations and will notify the Service Agent of all required testing.</p><p><strong>POST ACCIDENTS:</strong> As Supervisor or Owner-Operator, I agree to notify the Service Agent to perform testing when an employee is involved in an accident that results in a human fatality; citation AND bodily injury requiring medical attention away from accident scene or disabling damage to any vehicle requiring tow away. Breath alcohol testing must occur within 2 hours following an accident but no later than 8 hours. Drug testing must occur immediately but no later than 32 hours following an accident</p><p> Upon notification of random selection, as supervisor/owner I will ensure each driver selected for random testing is notified and receives testing. Non-compliance may result in removal from the program. (driver) may be discharged or otherwise disciplined for any violation by me of said Anti Drug and Alcohol Abuse Policy, for any failure or refusal to provide urine specimens when requested by Accurate C&amp;S Services. Refusal to Test includes, but are not limited to, No-show (failure to appear at the test collection site for random, post-accident, return-to-duty and follow-up testing); Failure to remain at the testing site until the collection is completed; Adulteration (urine specimen containing a substance or a concentration of a substance inconsistent with human urine); Substitution (urine specimen containing creatinine and specific gravity levels inconsistent with human urine); Failure to cooperate with any part of the testing process; e.g., not responding to random selections and disputing the process</p><p>I further understand that I must submit to direct observation testing if a specimen test is reported as Invalid or Negative Dilute with a creatinine &gt;2mg/dL but &lt; 5mg/dL, per MRO request, or per collector's request due to temp. out of range, etc. I further agree that the Service Agent may notify the CPUC, Employer, DOT and/or the California Highway Patrol of any non-compliance and removal from the consortium.</p><p><strong>SERVICE FEES:</strong> This program requires an ANNUAL payment to remain enrolled. Every December, you will receive a notice to renew for the upcoming year. Your payment may be prorated when you enroll after June of each year. </p><p><strong>SUPERVISOR TRAINING:</strong> Reasonable Suspicion training for supervisors is required. The company needs to have an individual trained in physical, behavioral, speech and performance indicators of probable alcohol misuse and use of a controlled substance. The purpose of this training is to enable supervisors to determine whether reasonable suspicion exists to require a driver to undergo testing. Supervisor training is $75.00 per Supervisor</p><p><strong>RETESTING SPLIT SPECIMEN BOTTLE B:</strong> If the donor requests a retest (i.e. wishes to test the second specimen bottle B, if there is one), the company must pay for the retest immediately. The cost of testing specimen bottle B is $275. </p>"
             },
             "Driver Signature": {
                 "lable": "Driver Signature",
                 "field_id": "owner_phone_number",
                 "type": "file",
                 "parent_id": null,
-                "style": "6",
+                "style": "6 formlabel",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Driver Signature"
             }
            
