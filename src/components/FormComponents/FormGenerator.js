@@ -111,9 +111,6 @@ const ParentForm = (props) => {
 	});
 	return (
 		<Col lg="12">
-			<label className="form-label justify-content-start">
-				{props.schema.lable}
-			</label>
 			<Row>
 				{childForm.map((f, k) => (
 					<RenderElement key={k} field={f} formUrl={props.formUrl} />
