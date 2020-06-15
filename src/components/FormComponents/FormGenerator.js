@@ -208,10 +208,10 @@ const FormGenerator = (props) => {
 					<br />
 					<Row className="text-right">
 						<Col>
-							<Button variant="primary" size="lg" active>
+							<Button variant="primary" size="md" active>
 								Save
 							</Button>{" "}
-							<Button variant="primary" size="lg" active>
+							<Button variant="primary" size="md" active>
 								Save & Print
 							</Button>{" "}
 						</Col>
