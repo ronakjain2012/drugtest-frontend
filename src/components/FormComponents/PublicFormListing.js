@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import T from "../Utils/T";
-import { Card, CardDeck, Col, Row } from "react-bootstrap";
+import { Card, CardDeck, Col, Row, Container } from "react-bootstrap";
 
 const PublicFormListing = (props) => {
 	return (
 		<div className="PublicFormListing">
 			<CardDeck>
+				<Container>
 				<Row>
 					{props.forms.map((item, index) =>
 						<Col key={`col${index}`} md={4} lg={4}>
@@ -15,7 +16,7 @@ const PublicFormListing = (props) => {
 									key={item.form_id}>
 									<Card.Body className="text-center">
 										<Card.Text>
-											<T t={item.title} />
+										{item.title} {' '}
 										</Card.Text>
 									</Card.Body>
 								</Card>
@@ -23,6 +24,7 @@ const PublicFormListing = (props) => {
 						</Col>
 					)}
 				</Row>
+				</Container>
 			</CardDeck>
 		</div>
 	);

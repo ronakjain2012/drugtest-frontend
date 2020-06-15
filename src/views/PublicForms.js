@@ -28,7 +28,7 @@ const PublicForms = (props) => {
 		<div className="PublicForms self-center">
 			<Container>
 				<Card className="home-screen">
-					{parentId ? (
+					{/* {parentId ? (
 						<Card.Header className="text-left bg-transparent">
 							<h3 onClick={() => goBack(parentId)}>
 								<IoMdArrowRoundBack /> Back
@@ -36,7 +36,7 @@ const PublicForms = (props) => {
 						</Card.Header>
 					) : (
 						""
-					)}
+					)} */}
 					<Card.Body>
 						<Row>
 							<Col className="text-center margin-bottom30">

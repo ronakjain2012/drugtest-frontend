@@ -48,7 +48,7 @@ $primary-dark: lighten($primary, 10%);
   background-position: 0%;
 
   &.btn-gradient-primary {
-    background: linear-gradient(to right, $primary, $primary-dark, $primary);
+    background: linear-gradient(to right, $primary, $primary-dark);
     background-size: 200%;
 
     &:hover {
@@ -229,7 +229,7 @@ $primary-dark: lighten($primary, 10%);
   margin-bottom: 30px;
   img{
     width: 20%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   h2{
     font-size:28px;
@@ -293,4 +293,38 @@ $primary-dark: lighten($primary, 10%);
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 20px;
+}
+
+.tcp-checkbox {
+  margin-top: 30px;
+}
+
+
+
+
+// Start Responsive Css
+
+@media screen and (max-width:992px){
+  .form-topheader{ 
+    img{
+      margin-bottom: 11px;
+      width: 28%;
+    }
+    h2 {
+      font-size: 23px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media screen and (max-width:600px){
+  .form-topheader{ 
+    img{
+      width: 160px;
+    }
+    h2 {
+      font-size: 20px;
+      line-height:25px;
+    }
+  }
 }

@@ -4,7 +4,7 @@ import ComponentLoad from "../Utils/ComponentLoad";
 import CountryStates from "../../config/CountryStates.json";
 import FormsSchema from "../../config/FormsSchema.json";
 import { withRouter } from "react-router-dom";
-import { Card, Row, Form, Col, Button } from "react-bootstrap";
+import { Card, Row, Form, Col, Button, Container } from "react-bootstrap";
 
 const ElInputField = (props) => (
 	<DynamicImport load={() => import("../GenericComponents/InputField")}>
@@ -167,64 +167,70 @@ const FormGenerator = (props) => {
 					: "FormGenerator self-center justify-content-center align-items-center"
 			}
 		>
-			<Card style={{ width: "70rem" }} className="shadow-md rounded-sm mx-auto">
-				<Card.Body>
-					<Row className="text-center">
-						{form.form_styling.includes("top_center") ? (
-							<Col lg="12">
-								<Row className="bg-primary border-radius-5 btn-gradient-hover btn-gradient-primary text-white m-2">
-									<Col lg="12" className="padding-1">
-										<h2>{form.page_body.title}</h2>
-									</Col>
-									<Col lg="12" className="padding-1">
-										<h4>{form.page_body.description}</h4>
+			<Container>
+				<Row>
+					<Col md={12}>
+						<Card className="shadow-md rounded-sm mx-auto">
+							<Card.Body>
+								<Row className="text-center">
+									{form.form_styling.includes("top_center") ? (
+										<Col lg="12">
+											<Row className="bg-primary border-radius-5 btn-gradient-hover btn-gradient-primary text-white m-2 padding-1">
+												<Col lg="12">
+													<h2>{form.page_body.title}</h2>
+												</Col>
+												<Col lg="12">
+													<h4>{form.page_body.description}</h4>
+												</Col>
+											</Row>
+											<br/>
+											<br/>
+
+										</Col>
+									) : (
+										<Col lg="12">
+											<div className="form-topheader">
+												<img src={form.page_body.logo} alt={form.page_body.title} width="20%"></img>
+												<h2>{form.page_body.title}</h2>
+												<h2>{form.page_body.description}</h2>
+											</div>
+										</Col>
+										
+									)}
+								</Row>
+								<Form inline={form.inline_form}>
+									<Row className="text-left">
+										{Object.keys(form.field_schema).map((f, k) =>
+											form.field_schema[f].parent_id === parentFieldId ? (
+												<RenderElement
+													key={k}
+													field={form.field_schema[f]}
+													formUrl={match.params.formUrl}
+												/>
+											) : (
+												""
+											)
+										)}
+									</Row>
+								</Form>
+
+								<Row className="text-right">
+									<Col>
+										<div className="bottom-btn-group pull-right">
+											<Button variant="primary" size="md" active>
+												Save
+											</Button>{" "}
+											<Button variant="primary" size="md" active>
+												Save & Print
+											</Button>{" "}
+										</div>
 									</Col>
 								</Row>
-								<br/>
-								<br/>
-
-							</Col>
-						) : (
-							<Col lg="12">
-								<div className="form-topheader">
-									<img src={form.page_body.logo} alt={form.page_body.title} width="20%"></img>
-									<h2>{form.page_body.title}</h2>
-									<h2>{form.page_body.description}</h2>
-								</div>
-							</Col>
-							
-						)}
-					</Row>
-					<Form inline={form.inline_form}>
-						<Row className="text-left">
-							{Object.keys(form.field_schema).map((f, k) =>
-								form.field_schema[f].parent_id === parentFieldId ? (
-									<RenderElement
-										key={k}
-										field={form.field_schema[f]}
-										formUrl={match.params.formUrl}
-									/>
-								) : (
-									""
-								)
-							)}
-						</Row>
-					</Form>
-
-					<Row className="text-right">
-						<Col>
-							<div className="bottom-btn-group pull-right">
-								<Button variant="primary" size="md" active>
-									Save
-								</Button>{" "}
-								<Button variant="primary" size="md" active>
-									Save & Print
-								</Button>{" "}
-							</div>
-						</Col>
-					</Row>
-				</Card.Body>
-			</Card>
+							</Card.Body>
+						</Card>
+					</Col>
+				</Row>
+			</Container>
 		</div>
 	);
 };

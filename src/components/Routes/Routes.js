@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import DynamicImport from "./../Utils/DynamicImport";
-import ComponentLoad from "./../Utils/ComponentLoad";
+import ComponentLoad from "./../Utils/ComponentLoad";	
+
 const PublicForms = (props) => (
 	<DynamicImport load={() => import("../../views/PublicForms")}>
 		{(Component) =>

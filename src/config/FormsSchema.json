@@ -28,11 +28,11 @@
                 "field_id": "tcp",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "6 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "TCP"
             },
             "tcp_status": {
@@ -40,7 +40,7 @@
                 "field_id": "tcp_status",
                 "type": "radio",
                 "parent_id": null,
-                "style": "6",
+                "style": "6 tcp-checkbox",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": true,
@@ -59,11 +59,11 @@
                 "field_id": "company_name",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "6 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Company Name"
             },
             "date": {
@@ -71,11 +71,11 @@
                 "field_id": "date",
                 "type": "date",
                 "parent_id": null,
-                "style": "6",
+                "style": "6 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Date"
             },
             "owner_name": {
@@ -83,11 +83,11 @@
                 "field_id": "owner_name",
                 "type": "input",
                 "parent_id": null,
-                "style": "6",
+                "style": "6 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Driver or Owner Name (Printed)"
             },
             "owner_signature": {
@@ -95,11 +95,11 @@
                 "field_id": "owner_signature",
                 "type": "file",
                 "parent_id": null,
-                "style": "6",
+                "style": "6 formlabel margin-bottom20",
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": false,
-                "lable_inline": true,
+                "lable_inline": false,
                 "placeholder": "Driver or Owner Signature"
             }
 
@@ -2484,7 +2484,7 @@
             "driver_details": {
                 "lable": "",
                 "field_id": "driver_details",
-                "type": "parent_multi",
+                "type": "parent",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -3869,15 +3869,10 @@
             "type": ""
         }
     },
-
-
-
-
-
     "taxi": {
         "form_id": "taxi",
         "parent_id": null,
-        "inline_form": false,
+        "inline_form": true,
         "form_styling": "page_center",
         "page_head": {
             "title": "Release Authorization",
@@ -4754,7 +4749,7 @@
                 "lable_inline": false,
                 "placeholder": "Driver Signature"
             }
-           
+
         },
         "get_action": {
             "url": "",
@@ -4995,7 +4990,7 @@
             },
             "Relationship": {
                 "lable": "Relationship to Beneficiary/Ies",
-                "field_id": "tcp_status",
+                "field_id": "tcp_status_beneficiary",
                 "type": "radio",
                 "parent_id": null,
                 "style": "6",
@@ -5042,7 +5037,8 @@
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "col-lg-6"
-            }, "state": {
+            },
+            "state": {
                 "lable": "Drivers License State",
                 "field_id": "state",
                 "type": "select_state",
