@@ -69,7 +69,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -93,7 +93,7 @@
             "owner_signature": {
                 "lable": "Driver or Owner Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -311,7 +311,7 @@
             "driver_details": {
                 "lable": "",
                 "field_id": "driver_details",
-                "type": "parent_multi",
+                "type": "parent",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -588,7 +588,7 @@
             "driver_details": {
                 "lable": "",
                 "field_id": "driver_details",
-                "type": "parent_multi",
+                "type": "parent",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -738,7 +738,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -762,7 +762,7 @@
             "owner_signature": {
                 "lable": "Driver or Owner Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -2240,7 +2240,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -2264,7 +2264,7 @@
             "owner_signature": {
                 "lable": "Driver or Owner Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -2603,7 +2603,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -2615,7 +2615,7 @@
             "owner_signature": {
                 "lable": "Employee's Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -2986,7 +2986,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -3010,7 +3010,7 @@
             "owner_signature": {
                 "lable": "Driver or Owner Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -3349,7 +3349,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -3361,7 +3361,7 @@
             "owner_signature": {
                 "lable": "Employee's Signature",
                 "field_id": "owner_signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -3814,7 +3814,7 @@
             "Employee Signature": {
                 "lable": "Employee Signature",
                 "field_id": "Employee Signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "7",
                 "custom_style": "",
@@ -3826,7 +3826,7 @@
             "Employee Signature Date": {
                 "lable": "Date",
                 "field_id": "employee_dl",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "5",
                 "custom_style": "",
@@ -3838,7 +3838,7 @@
             "Witness Signature": {
                 "lable": "Witness Signature",
                 "field_id": "Witness Signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "7",
                 "custom_style": "",
@@ -3850,7 +3850,7 @@
             "Witness Signature Date": {
                 "lable": "Date",
                 "field_id": "employee_dl",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "5",
                 "custom_style": "",
@@ -3892,7 +3892,7 @@
             "date": {
                 "lable": "Date",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -3948,7 +3948,7 @@
                 "placeholder": "State"
             },
             "mailingAddress": {
-                "lable": "Mailing Address",
+                "lable": "Address",
                 "field_id": "mailingAddress",
                 "type": "parent",
                 "parent_id": null,
@@ -3956,10 +3956,10 @@
                 "custom_style": "",
                 "validations": [],
                 "lable_hidden": true,
-                "placeholder": "Mailing Address"
+                "placeholder": "Address"
             },
             "mailingAddress_address": {
-                "lable": "Mailing Address",
+                "lable": "Address",
                 "field_id": "address",
                 "type": "textarea",
                 "parent_id": "mailingAddress",
@@ -4027,7 +4027,7 @@
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4063,7 +4063,7 @@
             "date": {
                 "lable": "Date",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4198,7 +4198,7 @@
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4234,7 +4234,7 @@
             "date": {
                 "lable": "Date",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4369,7 +4369,7 @@
             "signature": {
                 "lable": "Signature",
                 "field_id": "signature",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4405,7 +4405,7 @@
             "date": {
                 "lable": "Date",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "3 margin-bottom20",
                 "custom_style": "",
@@ -4675,6 +4675,66 @@
                 "type": "hr",
                 "parent_id": null
             },
+            "First Name": {
+                "lable": "First Name",
+                "field_id": "dba",
+                "type": "input",
+                "parent_id": null,
+                "style": "4",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "lable_inline": true,
+                "placeholder": "First Name"
+            },
+            "Middle Name": {
+                "lable": "Middle Name",
+                "field_id": "dba",
+                "type": "input",
+                "parent_id": null,
+                "style": "4",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "lable_inline": true,
+                "placeholder": "Middle Name"
+            },
+            "Last Name": {
+                "lable": "Last Name",
+                "field_id": "dba",
+                "type": "input",
+                "parent_id": null,
+                "style": "4",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "lable_inline": true,
+                "placeholder": "Last Name"
+            },
+            "Driver's License": {
+                "lable": "Driver's License",
+                "field_id": "owner_phone_number",
+                "type": "input",
+                "parent_id": null,
+                "style": "4",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "lable_inline": true,
+                "placeholder": "Driver's License"
+            },
+            "state": {
+                "lable": "State",
+                "field_id": "state",
+                "type": "select_state",
+                "parent_id": null,
+                "style": "4",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "lable_inline": true,
+                "placeholder": "State"
+            },
             "html1": {
                 "lable": "html",
                 "field_id": "html1",
@@ -4687,7 +4747,7 @@
             "Driver Signature": {
                 "lable": "Driver Signature",
                 "field_id": "owner_phone_number",
-                "type": "input",
+                "type": "file",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -4819,7 +4879,7 @@
             "Date of Birth": {
                 "lable": "Date of Birth",
                 "field_id": "Date of Birth",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -5060,7 +5120,7 @@
             "Date of Birth1": {
                 "lable": "Date of Birth",
                 "field_id": "Date of Birth",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
