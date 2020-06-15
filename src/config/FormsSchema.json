@@ -2484,7 +2484,7 @@
             "driver_details": {
                 "lable": "",
                 "field_id": "driver_details",
-                "type": "parent_multi",
+                "type": "parent",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
