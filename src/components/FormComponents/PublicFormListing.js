@@ -14,7 +14,7 @@ const PublicFormListing = (props) => {
 										key={item.form_id} 
 										style={{ width: '25rem' }}
 									>
-										<Card.Body>
+										<Card.Body  className="text-center">
 											<Card.Text>
 												<T t={item.title} />
 											</Card.Text>

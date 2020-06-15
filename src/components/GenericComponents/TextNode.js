@@ -1,10 +1,12 @@
 import React from "react";
-import { Col, FormGroup } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const TextNode = (props) => {
 	const schema = props.schema;
 	return (
-		<Col md="auto" className={schema.custom_style}>{schema.data}</Col>
+		<Col md="auto" className={schema.custom_style}>
+			{schema.data}
+		</Col>
 	);
 };
 

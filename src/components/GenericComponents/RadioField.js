@@ -1,16 +1,16 @@
 import React from "react";
 import { Form, Col, Row, FormGroup } from "react-bootstrap";
 
-const InputField = (props) => {
+const RadioField = (props) => {
 	const schema = props.schema;
 	const errors = props.errors || "";
-
+	console.log("asd", schema);
 	return (
 		<FormGroup
 			as={Col}
 			lg={schema.style.includes("full-width") ? "12" : schema.style}
 		>
-			<div className="InputField form-fiel max-width">
+			<div className="RadioField form-fiel max-width">
 				{schema.lable_hidden ? (
 					" "
 				) : schema.lable_inline || null ? (
@@ -19,11 +19,15 @@ const InputField = (props) => {
 							{schema.lable}
 						</Form.Label>
 						<Col sm={9}>
-							<Form.Control
-								className="max-width"
-								type="email"
-								placeholder={schema.placeholder || ""}
-							/>
+							{schema.values.map((i, k) => (
+								<Form.Check
+									inline
+									label={i.name}
+									type="radio"
+									name={schema.field_id}
+									id={schema.field_id + "-" + k}
+								/>
+							))}
 						</Col>
 					</Form.Group>
 				) : (
@@ -31,18 +35,20 @@ const InputField = (props) => {
 						{schema.lable}
 					</Form.Label>
 				)}
-				{schema.lable_inline || null ? (
-					""
-				) : (
-					<Form.Control
-						className="max-width"
-						type="email"
-						placeholder={schema.placeholder || ""}
-					/>
-				)}
+				{schema.lable_inline || null
+					? ""
+					: schema.values.map((i, k) => (
+							<Form.Check
+								inline
+								label={i.name}
+								type="radio"
+								name={schema.field_id}
+								id={schema.field_id + "-" + k}
+							/>
+					  ))}
 			</div>
 		</FormGroup>
 	);
 };
 
-export default InputField;
+export default RadioField;

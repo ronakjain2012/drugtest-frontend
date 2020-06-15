@@ -1,11 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
+import { Row, Button,Col } from "react-bootstrap";
 import DynamicImport from "../Utils/DynamicImport";
 import ComponentLoad from "../Utils/ComponentLoad";
 import CountryStates from "../../config/CountryStates.json";
 import FormsSchema from "../../config/FormsSchema.json";
-import { withRouter } from "react-router-dom";
-import { Card, Row, Form, Col, Button } from "react-bootstrap";
-
 const ElInputField = (props) => (
 	<DynamicImport load={() => import("../GenericComponents/InputField")}>
 		{(Component) =>
@@ -52,25 +50,9 @@ const ElHr = (props) => (
 		}
 	</DynamicImport>
 );
-const MultiParent = (props) => (
-	<DynamicImport load={() => import("../GenericComponents/MultiParent")}>
-		{(Component) =>
-			Component === null ? <ComponentLoad /> : <Component {...props} />
-		}
-	</DynamicImport>
-);
-
-
-const ElHtmlNode = (props) => (
-	<DynamicImport load={() => import("../GenericComponents/HTMLNode")}>
-		{(Component) =>
-			Component === null ? <ComponentLoad /> : <Component {...props} />
-		}
-	</DynamicImport>
-);
-
 
 const RenderElement = (props) => {
+	console.log("asd", props.field);
 	switch (props.field.type) {
 		case "input":
 			return <ElInputField schema={props.field} />;
@@ -92,13 +74,12 @@ const RenderElement = (props) => {
 			return <ParentForm schema={props.field} formUrl={props.formUrl} />;
 		case "parent_multi":
 			return <MultiParent schema={props.field} formUrl={props.formUrl} />;
-		case "html":
-			return <ElHtmlNode schema={props.field} />;
 		default:
 			console.log("input_field_type", props.field.type);
 			return "";
 	}
 };
+
 
 const ParentForm = (props) => {
 	const form = FormsSchema[props.formUrl];
@@ -123,80 +104,53 @@ const ParentForm = (props) => {
 	);
 };
 
+const MultiParent = (props) => {
+	const form = FormsSchema[props.formUrl];
+	let childForm = [];
+	Object.keys(form.field_schema).map((f) => {
+		if (form.field_schema[f].parent_id === props.schema.field_id) {
+			childForm.push(form.field_schema[f]);
+		}
+	});
+	const [rowsData, setRowsData] = useState({"data":[childForm]});
+	function addNewRow() {
 
-const FormGenerator = (props) => {
-	const match = props.match;
-	const form = FormsSchema[match.params.formUrl];
-	const parentFieldId = props.parentFieldId || null;
+		let r = rowsData;
+		r.data.push(rowsData.data[0]);
+		setRowsData({
+			...rowsData,
+			'data':r.data
+		});
+		console.log('tag', rowsData)
+	}
 	return (
-		<div
-			className={
-				form.form_styling.includes("top_center")
-					? "FormGenerator margin-top-1"
-					: "FormGenerator self-center justify-content-center align-items-center"
-			}
-		>
-			<Card style={{ width: "70rem" }} className="shadow-md rounded-sm mx-auto">
-				<Card.Body>
-					<Row className="text-center">
-						{form.form_styling.includes("top_center") ? (
-							<Col lg="12">
-								<Row className="bg-primary border-radius-5 btn-gradient-hover btn-gradient-primary text-white m-2">
-									<Col lg="12" className="padding-1">
-										<h2>{form.page_body.title}</h2>
-									</Col>
-									<Col lg="12" className="padding-1">
-										<h4>{form.page_body.description}</h4>
-									</Col>
-								</Row>
-								<br/>
-								<br/>
+		<Col lg="12" className="MultiParent p-4">
+			<label className="form-label justify-content-start">
+				{props.schema.lable}
+			</label>
 
-							</Col>
-						) : (
-							<Col lg="12">
-								<Col lg="12">
-									<img src={form.page_body.logo} alt={form.page_body.title} width="20%"></img>
-								</Col>
-								<Col lg="12">
-									<h2>{form.page_body.title}</h2>
-								</Col>
-								<Col lg="12">
-									<h2>{form.page_body.description}</h2>
-								</Col>
-							</Col>
-						)}
-					</Row>
-					<Form inline={form.inline_form}>
-						<Row className="text-left">
-							{Object.keys(form.field_schema).map((f, k) =>
-								form.field_schema[f].parent_id === parentFieldId ? (
-									<RenderElement
-										key={k}
-										field={form.field_schema[f]}
-										formUrl={match.params.formUrl}
-									/>
-								) : (
-									""
-								)
-							)}
-						</Row>
-					</Form>
-					<br />
-					<Row className="text-right">
-						<Col>
-							<Button variant="primary" size="lg" active>
-								Save
-							</Button>{" "}
-							<Button variant="primary" size="lg" active>
-								Save & Print
-							</Button>{" "}
-						</Col>
-					</Row>
-				</Card.Body>
-			</Card>
-		</div>
+			{rowsData['data'].map((r,ki) => (
+				<Row className=" shadow-sm p-1" key={ki}>
+					{childForm.map((f, k) => (
+						<RenderElement key={k} field={f} formUrl={props.formUrl} />
+					))}
+				</Row>
+			))}
+			<Row>
+				<Col className="mx-2 p-3">
+					<Button
+						variant="primary"
+						size="sm"
+						className="rounded"
+						onClick={addNewRow}
+					>
+						+ Add More
+					</Button>{" "}
+				</Col>
+			</Row>
+		</Col>
 	);
 };
 
-export default withRouter(FormGenerator);
+
+export default MultiParent;

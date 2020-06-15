@@ -38,7 +38,6 @@
 $primary-dark: lighten($primary, 10%);
 
 .btn-gradient-hover {
-  cursor: pointer;
   transition: all .3s ease-in-out;
   background-position: 0%;
 
@@ -76,6 +75,38 @@ $primary-dark: lighten($primary, 10%);
 .font-18{
   font-size: 22px;
 }
+
+.self-center {
+  min-height: 100vh;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.self-top-center {
+  min-height: 100vh;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+
+.border-radius-5{
+  border-radius: 5px;
+}
+
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
+.border-1 {
+  border: solid 1px $secondary ;
+}
+
+.padding-1 {
+  padding: 1rem;
+}
+
 // Component Loading 
 
 #outer {
@@ -120,16 +151,6 @@ $primary-dark: lighten($primary, 10%);
   }
 }
 
-// Public Forms
-.PublicForms,
-.FormRouteHandler {
-  min-height: 100vh;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
 
 .PublicFormListing {
 
