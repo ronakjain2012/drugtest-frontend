@@ -69,7 +69,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -738,7 +738,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -2240,7 +2240,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -2603,7 +2603,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -2986,7 +2986,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -3349,7 +3349,7 @@
             "date": {
                 "lable": "Date *",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -3826,7 +3826,7 @@
             "Employee Signature Date": {
                 "lable": "Date",
                 "field_id": "employee_dl",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "5",
                 "custom_style": "",
@@ -3850,7 +3850,7 @@
             "Witness Signature Date": {
                 "lable": "Date",
                 "field_id": "employee_dl",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "5",
                 "custom_style": "",
@@ -3892,7 +3892,7 @@
             "date": {
                 "lable": "Date",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4063,7 +4063,7 @@
             "date": {
                 "lable": "Date",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4234,7 +4234,7 @@
             "date": {
                 "lable": "Date",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4405,7 +4405,7 @@
             "date": {
                 "lable": "Date",
                 "field_id": "date",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "full-width",
                 "custom_style": "",
@@ -4817,7 +4817,7 @@
             "Date of Birth": {
                 "lable": "Date of Birth",
                 "field_id": "Date of Birth",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",
@@ -5058,7 +5058,7 @@
             "Date of Birth1": {
                 "lable": "Date of Birth",
                 "field_id": "Date of Birth",
-                "type": "input",
+                "type": "date",
                 "parent_id": null,
                 "style": "6",
                 "custom_style": "",

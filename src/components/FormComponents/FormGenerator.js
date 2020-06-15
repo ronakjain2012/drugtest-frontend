@@ -70,6 +70,15 @@ const ElHtmlNode = (props) => (
 );
 
 
+const ElDate = (props) => (
+	<DynamicImport load={() => import("../GenericComponents/DatepickerField")}>
+		{(Component) =>
+			Component === null ? <ComponentLoad /> : <Component {...props} />
+		}
+	</DynamicImport>
+);
+
+
 const RenderElement = (props) => {
 	switch (props.field.type) {
 		case "input":
@@ -86,6 +95,8 @@ const RenderElement = (props) => {
 			return <ElTextNode schema={props.field} />;
 		case "textarea":
 			return <ElTextAreaField schema={props.field} />;
+		case "date":
+			return <ElDate schema={props.field} />;
 		case "hr":
 			return <ElHr />;
 		case "parent":
