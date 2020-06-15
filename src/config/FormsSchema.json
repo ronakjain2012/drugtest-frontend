@@ -4483,17 +4483,7 @@
                 "lable_hidden": false,
                 "placeholder": "Email"
             },
-            "signature": {
-                "lable": "Signature",
-                "field_id": "signature",
-                "type": "input",
-                "parent_id": null,
-                "style": "3 margin-bottom20",
-                "custom_style": "",
-                "validations": [],
-                "lable_hidden": false,
-                "placeholder": "Signature"
-            },
+           
             
             "mailingAddress": {
                 "lable": "Address",
@@ -4549,6 +4539,17 @@
                 "validations": [],
                 "lable_hidden": false,
                 "placeholder": "Zipcode"
+            },
+            "signature": {
+                "lable": "Signature",
+                "field_id": "signature",
+                "type": "file",
+                "parent_id": null,
+                "style": "3 margin-bottom20",
+                "custom_style": "",
+                "validations": [],
+                "lable_hidden": false,
+                "placeholder": "Signature"
             }
         },
         "get_action": {
